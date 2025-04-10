@@ -54,15 +54,15 @@ const Header: React.FC = () => {
 						</button>
 					</div>
 					<nav className="flex flex-col gap-6" aria-label="Mobile navigation">
-						<a href="#how-it-works" className="text-xl font-bold text-black" onClick={() => setIsMenuOpen(false)}>
+						<Link href="/how-it-works" className="text-xl font-bold text-black" onClick={() => setIsMenuOpen(false)}>
 							How it Works
-						</a>
-						<a href="#survey-list" className="text-xl font-bold text-black" onClick={() => setIsMenuOpen(false)}>
+						</Link>
+						<Link href="/survey-list" className="text-xl font-bold text-black" onClick={() => setIsMenuOpen(false)}>
 							Survey List
-						</a>
-						<a href="#point-exchange" className="text-xl font-bold text-black" onClick={() => setIsMenuOpen(false)}>
+						</Link>
+						<Link href="/point-exchange" className="text-xl font-bold text-black" onClick={() => setIsMenuOpen(false)}>
 							Point Exchange
-						</a>
+						</Link>
 					</nav>
 					<div className="flex flex-col gap-4 mt-8">
 						<Button variant="secondary" className="w-full">Get AI</Button>

@@ -12,7 +12,7 @@ const CTASection: React.FC = () => {
       </p>
       <Button
         variant="secondary"
-        className="mx-auto my-0 w-[153px]"
+        className="mx-auto my-0 w-[153px] cursor-pointer"
         ariaLabel="Get started with Raku Earn"
       >
         Get Started
