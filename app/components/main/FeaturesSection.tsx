@@ -24,10 +24,10 @@ const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex gap-48 flex justify-center py-12 max-md:flex-col max-md:p-8">
+    <section className="flex gap-48 max-sm:gap-20 flex justify-center py-12 max-[1100px]:flex-col max-md:p-8">
       <div className="relative flex items-center justify-center">
-        <Image src={FeatureImage} alt="Feature Image" />
-        <Image src={CoinImage} alt="Coin Image" className="absolute top-[10%] right-[-6%]" />
+        <Image src={FeatureImage} alt="Feature Image" width={375} height={295}/>
+        <Image src={CoinImage} alt="Coin Image" className="absolute top-[10%] max-[1100px]:right-[20%] max-sm:top-[-9%] right-[-6%] max-sm:w-[120px]" />
       </div>
       <div className="">
         <h2 className="mb-8 text-4xl font-bold">Extra income, made easy</h2>
