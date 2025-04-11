@@ -1,12 +1,12 @@
 "use client";
 
 import * as React from "react";
-import { CategoryTitle } from "./CategoryTitle";
+import { CategoryTitle } from "@/app/components/comps/CategoryTitle";
 export const AboutPoints: React.FC = () => {
 	return (
 		<section className="mt-14 max-w-full max-md:mt-10">
 			<CategoryTitle title="About points" />
-			<div className="flex ml-10 w-[826px] max-md:w-full max-md:ml-0 gap-5 max-md:mt-2 mt-10 max-md:flex-col">
+			<div className="flex ml-10 w-[826px] max-md:w-full max-md:ml-0 gap-5 max-md:mt-2 mt-15 max-md:flex-col">
 				<div className="w-[33%] max-md:w-full">
 					<div className="flex grow gap-3.5 font-bold text-center text-white max-md:mt-5">
 						<div className="px-8 py-8 text-3xl whitespace-nowrap bg-gradient-to-r from-[#C093FF] via-[#FFA9EC] to-[#FFC65B] h-[106px] rounded-[731px] w-[106px] max-md:px-5">

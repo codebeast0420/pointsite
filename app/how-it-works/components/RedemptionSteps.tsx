@@ -1,29 +1,7 @@
 import * as React from "react";
 import { RedemptionCard } from "./RedemptionCard";
-import Redemption1 from "@/app/assets/images/redemption1.png";
-import Redemption2 from "@/app/assets/images/redemption2.png";
-import Redemption3 from "@/app/assets/images/redemption3.png";
-import { CategoryTitle } from "./CategoryTitle";
-const redemptionSteps = [
-	{
-		number: 1,
-		title: "Open the exchange page",
-		description: "Head to Point Exchange page.",
-		image: Redemption1,
-	},
-	{
-		number: 2,
-		title: "Choose your payout option",
-		description: "Select from PayPay, bank transfer, gift cards, and more.",
-		image: Redemption2,
-	},
-	{
-		number: 3,
-		title: "Confirm and wait for payout",
-		description: "Submit your request, your rewards will be on the way shortly.",
-		image: Redemption3,
-	},
-];
+import { CategoryTitle } from "@/app/components/comps/CategoryTitle";
+import { redemptionSteps } from "@/app/constants/constants";
 
 export const RedemptionSteps: React.FC = () => {
 	return (

@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Button from "../layout/Button";
 import FeatureImage from "@/app/assets/images/Union.png"
-import CoinImage from "@/app/assets/images/23.png"
 import FeaturePink from "./FeaturePink";
 import FeatureBluePink from "./FeatureBluePink";
 import FeatureYellow from "./FeatureYellow";
@@ -24,10 +23,9 @@ const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex gap-48 max-sm:gap-20 flex justify-center py-12 max-[1100px]:flex-col max-md:p-8">
+    <section className="flex gap-48 max-sm:gap-20 justify-center py-12 max-[1100px]:flex-col max-md:p-8">
       <div className="relative flex items-center justify-center">
         <Image src={FeatureImage} alt="Feature Image" width={375} height={295}/>
-        <Image src={CoinImage} alt="Coin Image" className="absolute top-[10%] max-[1100px]:right-[20%] max-sm:top-[-9%] right-[-6%] max-sm:w-[120px]" />
       </div>
       <div className="">
         <h2 className="mb-8 text-4xl font-bold">Extra income, made easy</h2>

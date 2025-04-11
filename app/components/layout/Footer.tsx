@@ -1,21 +1,29 @@
 import React from "react";
+import Link from "next/link";
 import GoogleLogo from "../svg/GoogleLogo";
 import InstagramLogo from "../svg/InstagramLogo";
 
 interface MenuItems {
-  [key: string]: string[];
+  [key: string]: { label: string, href: string }[];
 }
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  className?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ className }) => {
   const menuItems: MenuItems = {
     Menu: [
-      "Home",
-      "How it works",
-      "Survey list",
-      "Point exchange",
-      "Raku Earn AI",
+      { label: "Home", href: "/" },
+      { label: "How it works", href: "/how-it-works" },
+      { label: "Survey list", href: "/survey-list" },
+      { label: "Point exchange", href: "/point-exchange" },
+      { label: "Raku Earn AI", href: "/rakuearn-ai" },
     ],
-    Resources: ["Contact", "Account"],
+    Resources: [
+      { label: "Contact", href: "/contact" },
+      { label: "Account", href: "/account" },
+    ],
   };
 
   const policies: string[] = [
@@ -25,7 +33,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="py-12 px-10 max-sm:px-5 max-sm:py-8">
+    <footer className={`py-12 px-10 max-sm:px-5 bg-[#F6F5F9] max-sm:py-8 ${className}`}>
       <div className="flex max-[600px]:flex-col justify-between">
         <div className="flex max-sm:flex-row max-sm:items-center flex-col gap-5 items-start mb-8">
           <div className="flex flex-col gap-5 items-start mb-8">
@@ -70,13 +78,13 @@ const Footer: React.FC = () => {
             >
               <h3 className="mb-2.5 text-base font-bold">{category}</h3>
               {items.map((item, index) => (
-                <a
+                <Link
                   key={index}
-                  href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                  href={item.href}
                   className="text-base font-medium text-black"
                 >
-                  {item}
-                </a>
+                  {item.label}
+                </Link>
               ))}
             </nav>
           ))}

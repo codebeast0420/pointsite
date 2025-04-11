@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StepCard } from "./StepCard";
 import { StaticImageData } from "next/image";
-import { CategoryTitle } from "./CategoryTitle";
+import { CategoryTitle } from "@/app/components/comps/CategoryTitle";
 interface Step {
 	number: number;
 	title: string;

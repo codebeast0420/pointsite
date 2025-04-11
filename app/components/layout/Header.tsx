@@ -26,7 +26,7 @@ const Header: React.FC = () => {
 				</Link>
 			</nav>
 			<div className="flex gap-2.5 max-[906px]:hidden">
-				<Button variant="secondary">Get AI</Button>
+				<Button variant="secondary">AI Dashboard</Button>
 				<Button variant="primary">Login</Button>
 			</div>
 
@@ -46,13 +46,13 @@ const Header: React.FC = () => {
 			{/* Mobile Menu */}
 			<div className={`fixed top-0 left-0 w-full h-full bg-white z-50 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} max-[906px]:block hidden`}>
 				<div className="p-4">
-					<div className="flex justify-between items-center mb-8">
+					<Link href="/" className="flex justify-between items-center mb-8">
 						<img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b4a2606fc0d129ed5f9dc4774ede3ece5dba4f4" alt="Logo" className="h-[58px] w-[172px]" />
 						<button onClick={() => setIsMenuOpen(false)} className="p-2">
 							<span className="block h-0.5 w-6 bg-black rotate-45 translate-y-2.5"></span>
 							<span className="block h-0.5 w-6 bg-black -rotate-45 -translate-y-2.5"></span>
 						</button>
-					</div>
+					</Link>
 					<nav className="flex flex-col gap-6" aria-label="Mobile navigation">
 						<Link href="/how-it-works" className="text-xl font-bold text-black" onClick={() => setIsMenuOpen(false)}>
 							How it Works
@@ -65,7 +65,7 @@ const Header: React.FC = () => {
 						</Link>
 					</nav>
 					<div className="flex flex-col gap-4 mt-8">
-						<Button variant="secondary" className="w-full">Get AI</Button>
+						<Button variant="secondary" className="w-full">AI Dashboard</Button>
 						<Button variant="primary" className="w-full">Login</Button>
 					</div>
 				</div>
