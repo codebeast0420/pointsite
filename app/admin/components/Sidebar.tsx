@@ -2,9 +2,7 @@
 import * as React from "react";
 import { Menu, X } from "lucide-react";
 
-export const Sidebar: React.FC = () => {
-	const navItems = ["Home", "User", "Exchanges", "Post Survey", "Survey List"];
-	const [activeItem, setActiveItem] = React.useState(navItems[0]);
+export const Sidebar: React.FC<{ navItems: string[], activeItem: string, setActiveItem: (item: string) => void, setIsSurveyDetailOpen: (isOpen: boolean) => void }> = ({ navItems, activeItem, setActiveItem, setIsSurveyDetailOpen }) => {
 	const [isOpen, setIsOpen] = React.useState(false);
 
 	return (
@@ -43,6 +41,7 @@ export const Sidebar: React.FC = () => {
 									aria-current={item === activeItem ? "page" : undefined}
 									onClick={() => {
 										setActiveItem(item);
+										setIsSurveyDetailOpen(false);
 									}}
 								>
 									{item}
