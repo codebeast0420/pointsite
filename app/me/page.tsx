@@ -6,7 +6,8 @@ import { PointPassbook } from "./components/PointPassbook";
 import { OtherSettings } from "./components/OtherSetting";
 import Footer from "../components/layout/Footer";
 import { Layout } from "../components/layout/Layout";
-export const UserAccountPage: React.FC = () => {
+
+export default function Page () {
 	return (
 		<Layout>
 			<div className="px-12 max-md:px-2">
@@ -22,4 +23,3 @@ export const UserAccountPage: React.FC = () => {
 	);
 };
 
-export default UserAccountPage;

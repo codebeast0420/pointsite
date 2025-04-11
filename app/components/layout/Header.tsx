@@ -1,8 +1,21 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import Link from "next/link";
+import { ChevronRight, UserRound } from "lucide-react";
+import { HeaderLinks } from "@/app/constants/constants";
+
+const MobileLink = ({ href, title, onClick }: { href: string, title: string, onClick: () => void }) => {
+	return (
+		<Link href={href} className="text-xl font-bold text-black" onClick={onClick}>
+			{title}
+		</Link>
+	);
+};
+
 const Header: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [isLogedin, setIsLogedin] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
 	return (
 		<header className="flex items-center justify-between py-8">
@@ -12,9 +25,6 @@ const Header: React.FC = () => {
 				</Link>
 			</div>
 			<nav className="flex gap-10 max-[906px]:hidden" aria-label="Main navigation">
-				{/* <a href="#how-it-works" className="text-base font-bold text-black">
-					How it Works
-				</a> */}
 				<Link href="/how-it-works" className="text-base font-bold text-black">
 					How it Works
 				</Link>
@@ -27,7 +37,47 @@ const Header: React.FC = () => {
 			</nav>
 			<div className="flex gap-2.5 max-[906px]:hidden">
 				<Button variant="secondary">AI Dashboard</Button>
-				<Button variant="primary">Login</Button>
+				{isLogedin ? (
+					<div className="relative" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
+						<div className="flex cursor-pointer items-center justify-center p-3 rounded-full bg-neutral-100 hover:bg-neutral-200 gap-2">
+							<UserRound color="black" width={30} height={30} />
+						</div>
+
+						{isOpen && (
+							<>
+								<div className="absolute w-full h-2 -bottom-2"></div>
+
+								<div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+									<div className="px-2">
+										<div className="flex items-center px-4 py-2 justify-between bg-[#F6F5F9] rounded-md">
+											<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="18" height="18" rx="9" fill="#FFC031" />
+												<path d="M6.5748 13.25V5.06818H9.95459C10.5672 5.06818 11.0958 5.18803 11.5406 5.42773C11.9881 5.66477 12.333 5.99636 12.5753 6.4225C12.8177 6.84597 12.9389 7.33869 12.9389 7.90066C12.9389 8.46529 12.815 8.95934 12.5673 9.38281C12.3223 9.80362 11.9721 10.1299 11.5166 10.3616C11.0612 10.5933 10.5206 10.7092 9.89466 10.7092H7.80926V9.1511H9.52712C9.82542 9.1511 10.0744 9.09917 10.2742 8.99529C10.4766 8.89142 10.6297 8.74627 10.7336 8.55984C10.8375 8.37074 10.8894 8.15101 10.8894 7.90066C10.8894 7.64764 10.8375 7.42924 10.7336 7.24547C10.6297 7.05904 10.4766 6.91522 10.2742 6.81401C10.0718 6.7128 9.82275 6.6622 9.52712 6.6622H8.55233V13.25H6.5748Z" fill="white" />
+											</svg>
+											<p className="text-[#8771EF]">8,000 P</p>
+										</div>
+									</div>
+									<Link
+										href="/me"
+										className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-neutral-50"
+									>
+										<p>My Account</p>
+										<ChevronRight />
+									</Link>
+									<button
+										onClick={() => {/* Add logout logic here */ }}
+										className="flex items-center justify-between w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-neutral-50"
+									>
+										<p>Log Out</p>
+										<ChevronRight />
+									</button>
+								</div>
+							</>
+						)}
+					</div>
+				) : (
+					<Button variant="primary">Login</Button>
+				)}
 			</div>
 
 			{/* Hamburger Menu Button */}
@@ -54,19 +104,17 @@ const Header: React.FC = () => {
 						</button>
 					</Link>
 					<nav className="flex flex-col gap-6" aria-label="Mobile navigation">
-						<Link href="/how-it-works" className="text-xl font-bold text-black" onClick={() => setIsMenuOpen(false)}>
-							How it Works
-						</Link>
-						<Link href="/survey-list" className="text-xl font-bold text-black" onClick={() => setIsMenuOpen(false)}>
-							Survey List
-						</Link>
-						<Link href="/point-exchange" className="text-xl font-bold text-black" onClick={() => setIsMenuOpen(false)}>
-							Point Exchange
-						</Link>
+						{HeaderLinks.map((link, index) => (
+							<MobileLink key={index} title={link.title} href={link.href} onClick={() => setIsMenuOpen(false)} />
+						))}
 					</nav>
 					<div className="flex flex-col gap-4 mt-8">
 						<Button variant="secondary" className="w-full">AI Dashboard</Button>
-						<Button variant="primary" className="w-full">Login</Button>
+						{isLogedin ? (
+							<Button variant="primary" className="w-full">Log Out</Button>
+						) : (
+							<Button variant="primary" className="w-full">Login</Button>
+						)}
 					</div>
 				</div>
 			</div>

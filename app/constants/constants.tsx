@@ -234,3 +234,10 @@ export const ExchangeHistoryItems: ExchangeHistoryItem[] = [
 		date: "4/9/2024",
 	},
 ];
+
+export const HeaderLinks =[
+	{title: "How it Works", href: "/how-it-works"},
+	{title: "Survey List", href: "/survey-list"},
+	{title: "Point Exchange", href: "/point-exchange"},
+	// {title: "My Account", href: "/me"}
+]
