@@ -172,3 +172,65 @@ export const ExchangeProcedure = [
 		className: "",
 	},
 ];
+
+export const HistoryItems = [
+	{
+		title:
+			"Survey title will go here as you can see the max length if there is more",
+		points: 1000,
+		date: "4/9/2024",
+		imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/aa11d8c4fd8d99e7062aea7428f8d8d69a69465a",
+	},
+	{
+		title:
+			"Survey title will go here as you can see the max length if there is more",
+		points: 1000,
+		date: "4/9/2024",
+		imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/aa11d8c4fd8d99e7062aea7428f8d8d69a69465a",
+	},
+	{
+		title:
+			"Survey title will go here as you can see the max length if there is more",
+		points: 1000,
+		date: "4/9/2024",
+		imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/aa11d8c4fd8d99e7062aea7428f8d8d69a69465a",
+	},
+	{
+		title:
+			"Survey title will go here as you can see the max length if there is more",
+		points: 1000,
+		date: "4/9/2024",
+		imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/aa11d8c4fd8d99e7062aea7428f8d8d69a69465a",
+	},
+];
+
+export interface ExchangeHistoryItem {	
+	image: string;
+	title: string;
+	amount: string;
+	status: "pending" | "complete" | "declined";
+	date: string;
+}
+export const ExchangeHistoryItems: ExchangeHistoryItem[] = [
+	{
+		image: PaymentCardImg.amazon.icon,
+		title: "Amazon gift card",
+		amount: "1,000 yen",
+		status: "pending",
+		date: "4/9/2024",
+	},
+	{
+		image: PaymentCardImg.googlePlay.icon,
+		title: "Google play gift card",
+		amount: "300 yen",
+		status: "complete",
+		date: "4/9/2024",
+	},
+	{
+		image: PaymentCardImg.googlePlay.icon,
+		title: "Google play gift card",
+		amount: "300 yen",
+		status: "declined",
+		date: "4/9/2024",
+	},
+];

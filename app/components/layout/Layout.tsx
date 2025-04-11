@@ -6,7 +6,7 @@ interface LayoutProps {
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <main className="max-md:px-2 mx-auto my-0 w-full bg-white max-w-[1600px] max-md:max-w-[991px] max-sm:max-w-screen-sm">
+    <main className="max-md:px-2 mx-auto my-0 bg-white max-w-[1920px] max-md:max-w-[991px] max-sm:max-w-screen-sm">
       {children}
     </main>
   );
