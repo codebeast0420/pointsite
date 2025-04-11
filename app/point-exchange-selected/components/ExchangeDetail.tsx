@@ -1,7 +1,7 @@
 import React from "react";
 import { Info } from "lucide-react";
 import { TableRow } from "./TableRow";
-import { ExchangeDetails as ExchangeDetailsData } from "@/app/constants/constants";
+import { ExchangeDetails as ExchangeDetailsData } from "@/constants/constants";
 
 export const ExchangeDetails: React.FC = () => {
 	return (

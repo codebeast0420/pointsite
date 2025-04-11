@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Button from "./Button";
 import Link from "next/link";
 import { ChevronRight, UserRound } from "lucide-react";
-import { HeaderLinks } from "@/app/constants/constants";
+import { HeaderLinks } from "@/constants/constants";
+import { useRouter } from "next/navigation";
 
 const MobileLink = ({ href, title, onClick }: { href: string, title: string, onClick: () => void }) => {
 	return (
@@ -16,6 +17,8 @@ const Header: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLogedin, setIsLogedin] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
+
+	const router = useRouter();
 
 	return (
 		<header className="flex items-center justify-between py-8">
@@ -76,7 +79,7 @@ const Header: React.FC = () => {
 						)}
 					</div>
 				) : (
-					<Button variant="primary">Login</Button>
+					<Button variant="primary" onClick={() => router.push("/login")}>Login</Button>
 				)}
 			</div>
 
@@ -113,7 +116,7 @@ const Header: React.FC = () => {
 						{isLogedin ? (
 							<Button variant="primary" className="w-full">Log Out</Button>
 						) : (
-							<Button variant="primary" className="w-full">Login</Button>
+							<Button variant="primary" className="w-full" onClick={() => router.push("/login")}>Login</Button>
 						)}
 					</div>
 				</div>

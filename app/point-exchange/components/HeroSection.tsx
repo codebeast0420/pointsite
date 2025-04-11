@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Penny from "@/app/assets/images/5.png";
+import Penny from "@/assets/images/5.png";
 
 export const HeroSection = () => {
   return (

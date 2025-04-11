@@ -1,5 +1,5 @@
 import React from "react";
-import { RedemptionOptions } from "@/app/constants/constants";
+import { RedemptionOptions } from "@/constants/constants";
 const RedemptionSection: React.FC = () => {
 
   return (

@@ -2,16 +2,16 @@
 
 import * as React from "react";
 import Image from "next/image";
-import Header from "../components/layout/Header";
+import Header from "@/components/layout/Header";
 import { StepsSection } from "./components/StepsSection";
 import { AboutPoints } from "./components/AboutPoints";
-import Footer from "../components/layout/Footer";
-import CTASection from "../components/main/CTASection";
-import PStack from "../components/svg/PStack";
-import Man from "@/app/assets/images/man.png"
-import { howToUseSteps } from "../constants/constants";
+import Footer from "@/components/layout/Footer";
+import CTASection from "@/components/main/CTASection";
+import PStack from "@/components/svg/PStack";
+import Man from "@/assets/images/man.png"
+import { howToUseSteps } from "@/constants/constants";
 import { RedemptionSteps } from "./components/RedemptionSteps";
-import { Layout } from "@/app/components/layout/Layout";
+import { Layout } from "@/components/layout/Layout";
 
 const HowItWorks: React.FC = () => {
 	return (

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { PaymentCardImg } from "@/app/constants/constants";
+import { PaymentCardImg } from "@/constants/constants";
 
 const amounts = ["300", "500", "1,000", "3,000", "10,000"];
 type PaymentMethodId = keyof typeof PaymentCardImg;

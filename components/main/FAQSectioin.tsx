@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CircleMinus } from "lucide-react";
 import { CirclePlus } from "lucide-react";
-import { FAQs } from "@/app/constants/constants";
+import { FAQs } from "@/constants/constants";
 
 const FAQSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);

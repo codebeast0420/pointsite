@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import Header from "../components/layout/Header";
+import Header from "@/components/layout/Header";
 import { AccountSummary } from "./components/AccountSummary";
 import { PointPassbook } from "./components/PointPassbook";
 import { OtherSettings } from "./components/OtherSetting";
-import Footer from "../components/layout/Footer";
-import { Layout } from "../components/layout/Layout";
+import Footer from "@/components/layout/Footer";
+import { Layout } from "@/components/layout/Layout";
 
 export default function Page () {
 	return (

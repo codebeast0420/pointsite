@@ -1,7 +1,7 @@
 import React from "react";
-import { CategoryTitle } from "@/app/components/comps/CategoryTitle";
+import { CategoryTitle } from "@/components/comps/CategoryTitle";
 import PaymentMethodCard from "./PaymentMethodCard";
-import { PaymentCardImg } from "@/app/constants/constants";
+import { PaymentCardImg } from "@/constants/constants";
 import { useRouter } from "next/navigation";
 interface PaymentSectionProps {
 	selectedPaymentMethod: string;

@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { CategoryTitle } from "@/app/components/comps/CategoryTitle";
+import { CategoryTitle } from "@/components/comps/CategoryTitle";
 export const AboutPoints: React.FC = () => {
 	return (
 		<section className="mt-14 max-w-full max-md:mt-10">

@@ -1,6 +1,6 @@
 import React from "react";
 import { CircleHelp } from "lucide-react";
-import { ExchangeProcedure as ExchangeProcedureData } from "@/app/constants/constants";
+import { ExchangeProcedure as ExchangeProcedureData } from "@/constants/constants";
 import { TableRow } from "./TableRow";
 
 export const ExchangeProcedure: React.FC = () => {

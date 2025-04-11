@@ -60,7 +60,7 @@ export const AccountForm = () => {
               className="px-5 py-3 whitespace-nowrap rounded-md border border-solid border-zinc-300 border-opacity-90"
               onChange={(e) => setUserProfile({ ...uerProfile, pwd: e.target.value })}
             />
-            <button className="my-auto hover:text-gray-700">
+            <button className="my-auto cursor-pointer hover:text-gray-700">
               Change password
             </button>
           </div>

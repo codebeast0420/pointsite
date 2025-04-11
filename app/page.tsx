@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import Header from "./components/layout/Header";
-import HeroSection from "./components/main/HeroSection";
-import RedemptionSection from "./components/main/RedemptionSection";
-import FeaturesSection from "./components/main/FeaturesSection";
-import FAQSection from "./components/main/FAQSectioin";
-import CTASection from "./components/main/CTASection";
-import Footer from "./components/layout/Footer";
-import { Layout } from "./components/layout/Layout";
+import Header from "@/components/layout/Header";
+import HeroSection from "@/components/main/HeroSection";
+import RedemptionSection from "@/components/main/RedemptionSection";
+import FeaturesSection from "@/components/main/FeaturesSection";
+import FAQSection from "@/components/main/FAQSectioin";
+import CTASection from "@/components/main/CTASection";
+import Footer from "@/components/layout/Footer";
+import { Layout } from "@/components/layout/Layout";
 
 const LandingPage: React.FC = () => {
   return (

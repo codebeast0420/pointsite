@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { Calendar, ChevronDown } from "lucide-react";
 import { SelectorButton } from "./SelectorButton";
 import { EarnedHistoryCard } from "./EarnedHistoryCard";
-import { HistoryItems } from "@/app/constants/constants";
+import { HistoryItems } from "@/constants/constants";
 import { ExchangeHistoryCard } from "./ExchangeHistoryCard";
-import { ExchangeHistoryItems } from "@/app/constants/constants";
+import { ExchangeHistoryItems } from "@/constants/constants";
 
 export const PointPassbook: React.FC = () => {
 	const [selectedTab, setSelectedTab] = useState('earned');

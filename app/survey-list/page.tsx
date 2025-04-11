@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import Header from "../components/layout/Header";
+import Header from "@/components/layout/Header";
 import { RecommendedSection } from "./components/RecommendedSection";
 import { AllSurveysSection } from "./components/AllSurveysSection";
-import Footer from "../components/layout/Footer";
-import { Layout } from "@/app/components/layout/Layout";
+import Footer from "@/components/layout/Footer";
+import { Layout } from "@/components/layout/Layout";
 
 const InputDesign: React.FC = () => {
 	return (

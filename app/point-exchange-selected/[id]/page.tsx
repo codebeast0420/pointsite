@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import { useParams } from "next/navigation";
-import Header from "../../components/layout/Header";
+import Header from "@/components/layout/Header";
 import { BackButton } from "../components/BackButton";
 import { GiftCardSelector } from "../components/GiftCardSelector";
 import { ExchangeDetails } from "../components/ExchangeDetail";
 import { ExchangeProcedure } from "../components/ExchangeProcedure";
-import Footer from "../../components/layout/Footer";
-import { Layout } from "../../components/layout/Layout";
-import { PaymentCardImg } from "@/app/constants/constants";
+import Footer from "@/components/layout/Footer";
+import { Layout } from "@/components/layout/Layout";
+import { PaymentCardImg } from "@/constants/constants";
 
 type PaymentMethodId = keyof typeof PaymentCardImg;
 

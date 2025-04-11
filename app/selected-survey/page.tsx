@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import Header from "../components/layout/Header";
+import Header from "@/components/layout/Header";
 import { SurveyDetails } from "./components/SurveyDetails";
 import { SuggestedSurveys } from "./components/SuggestedSurveys";
-import Footer from "../components/layout/Footer";
-import { Layout } from "@/app/components/layout/Layout";
+import Footer from "@/components/layout/Footer";
+import { Layout } from "@/components/layout/Layout";
 import { BackButton } from "../point-exchange-selected/components/BackButton";
 
 const SelectedSurvey: React.FC = () => {

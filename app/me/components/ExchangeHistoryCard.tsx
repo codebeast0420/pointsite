@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ExchangeHistoryItem } from "@/app/constants/constants";
+import { ExchangeHistoryItem } from "@/constants/constants";
 
 interface ExchangeHistoryCardProps {
 	index: number;

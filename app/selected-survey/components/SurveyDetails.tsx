@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Badge } from "./Badge";
-import Button from "@/app/components/layout/Button";
+import Button from "@/components/layout/Button";
 
 export const SurveyDetails: React.FC = () => {
   return (

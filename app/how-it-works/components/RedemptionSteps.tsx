@@ -1,7 +1,7 @@
 import * as React from "react";
 import { RedemptionCard } from "./RedemptionCard";
-import { CategoryTitle } from "@/app/components/comps/CategoryTitle";
-import { redemptionSteps } from "@/app/constants/constants";
+import { CategoryTitle } from "@/components/comps/CategoryTitle";
+import { redemptionSteps } from "@/constants/constants";
 
 export const RedemptionSteps: React.FC = () => {
 	return (

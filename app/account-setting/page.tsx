@@ -1,8 +1,8 @@
 "use client";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import { AccountForm } from "./components/AccountForm";
-import { Layout } from "../components/layout/Layout";
+import { Layout } from "@/components/layout/Layout";
 
 export default function AccountSetting() {
 	return (
