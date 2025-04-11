@@ -12,7 +12,7 @@ export function SelectField(props: SelectFieldProps) {
         {...props}
         className="w-full h-full px-4 appearance-none bg-transparent"
       >
-        <option value="" disabled selected />
+        <option value="" disabled defaultValue="" />
       </select>
       <svg
         className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none"

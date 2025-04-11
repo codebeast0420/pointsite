@@ -3,7 +3,8 @@ import { useState } from "react";
 import { RadioButton } from "./RadioButton";
 import { DateSelector } from "./DateSelector";
 import { ChevronDown } from "lucide-react";
-interface UserProfile {
+
+export interface UserProfile {
   nickname: string,
   email: string,
   pwd: string,
