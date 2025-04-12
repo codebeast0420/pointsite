@@ -33,8 +33,9 @@ export const AccountForm = () => {
 
       <div className="flex flex-col w-full gap-8">
         <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 mt-10 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black whitespace-nowrap">
-          <label className="my-auto w-[20%]">Nickname</label>
+          <label htmlFor="nickname" className="my-auto w-[20%]">Nickname</label>
           <input
+            id="nickname"
             type="text"
             value={uerProfile.nickname}
             className="px-5 py-3 rounded-md border border-solid border-zinc-300 border-opacity-90"
@@ -43,8 +44,9 @@ export const AccountForm = () => {
         </div>
 
         <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black">
-          <label className="my-auto w-[20%]">Email address</label>
+          <label htmlFor="email" className="my-auto w-[20%]">Email address</label>
           <input
+            id="email"
             type="email"
             value={uerProfile.email}
             className="px-5 py-3 whitespace-nowrap rounded-md border border-solid border-zinc-300 border-opacity-90"
@@ -53,9 +55,10 @@ export const AccountForm = () => {
         </div>
 
         <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black">
-          <label className="my-auto w-[20%]">Password</label>
+          <label htmlFor="password" className="my-auto w-[20%]">Password</label>
           <div className="flex gap-5">
             <input
+              id="password"
               type="password"
               value={uerProfile.pwd}
               className="px-5 py-3 whitespace-nowrap rounded-md border border-solid border-zinc-300 border-opacity-90"
@@ -68,7 +71,7 @@ export const AccountForm = () => {
         </div>
 
         <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black">
-          <label className="my-auto w-[20%] text-base font-medium text-black">
+          <label htmlFor="dob" className="my-auto w-[20%] text-base font-medium text-black">
             Date of birth
           </label>
           <div className="flex gap-2.5">
@@ -80,7 +83,7 @@ export const AccountForm = () => {
         </div>
 
         <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black">
-          <label className="my-auto w-[20%] text-base font-medium text-black">Gender</label>
+          <label htmlFor="gender" className="my-auto w-[20%] text-base font-medium text-black">Gender</label>
           <div className="flex gap-8">
             <RadioButton
               label="Male"
@@ -104,9 +107,10 @@ export const AccountForm = () => {
         </div>
 
         <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black whitespace-nowrap">
-          <label className="my-auto w-[20%]">Prefectures</label>
+          <label htmlFor="prefectures" className="my-auto w-[20%]">Prefectures</label>
           <div className="relative">
             <select
+              id="prefectures"
               value={uerProfile.prefectures}
               onChange={(e) => setUserProfile({ ...uerProfile, prefectures: e.target.value })}
               className="px-4 py-2 relative rounded-lg border border-zinc-300 appearance-none bg-white cursor-pointer w-[120px]"

@@ -44,6 +44,7 @@ export const SurveyDetail: React.FC = () => {
           label="Estimated time (min)"
           value={formData.estimatedTime}
           onChange={(value) => handleInputChange("estimatedTime", value)}
+          className="mb-20"
         />
         <FormInput
           id="points-amount"

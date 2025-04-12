@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
 	return (
 		<section className="flex flex-row items-center justify-around max-[1100px]:p-8 max-[1100px]:gap-8 max-[1100px]:flex-col max-md:p-5">
 			<div className="ml-[7%]">
-				<h1 className="mb-5 text-6xl font-bold max-sm:text-4xl">
+				<h1 className="mb-8 text-5xl font-bold max-sm:text-4xl">
 					<span>Let AI take surveys</span>
 					<br />
 					<span className="bg-gradient-to-r from-[#c093ff] via-[#ffa9ec] to-[#FDB073] bg-clip-text text-transparent">
@@ -42,13 +42,13 @@ const HeroSection: React.FC = () => {
 				<p className="mb-5 text-lg font-semibold">
 					Surveys, filled out for you. Points, earned in real-time.
 				</p>
-				<div className="flex gap-4 items-center mb-8">
+				<div className="flex gap-4 items-center mb-16">
 					<UserAvatarStack />
 					<p className="text-lg font-semibold text-[#A7A7C7]">
 						1000+ active users
 					</p>
 				</div>
-				<div className="flex gap-4">
+				<div className="flex gap-4 mt-8">
 					<Button variant="primary">Start Earning</Button>
 					<Button variant="secondary">Get AI</Button>
 				</div>

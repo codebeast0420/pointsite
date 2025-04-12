@@ -21,7 +21,7 @@ export const GiftCardSelector: React.FC<{ id: PaymentMethodId }> = ({ id }) => {
 								{amounts.map((amount) => (
 									<button
 										key={amount}
-										className="px-5 py-3.5 font-semibold text-center bg-white rounded-xl border border-solid border-zinc-300 border-opacity-90 min-w-[126px] hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-violet-500"
+										className="px-5 py-3.5 font-semibold text-center bg-white rounded-xl border border-solid border-zinc-300 border-opacity-90 min-w-[100px] hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-violet-500"
 									>
 										{amount} YEN
 									</button>

@@ -15,7 +15,7 @@ export const StatCard: React.FC<StatCardProps> = ({
 
   return (
     <article
-      className={`flex flex-col grow items-start py-6 pr-14 pl-5 w-full text-lg font-semibold text-black ${bgColor} rounded-xl max-md:pr-5 max-md:mt-8`}
+      className={`flex flex-col grow w-[300px] max-md:w-full items-start py-6 pr-14 pl-5 text-lg font-semibold text-black ${bgColor} rounded-xl max-md:pr-5 max-md:mt-8`}
       role="region"
       aria-label={title}
     >

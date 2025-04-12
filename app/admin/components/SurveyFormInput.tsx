@@ -7,6 +7,7 @@ interface FormInputProps {
   onChange?: (value: string) => void;
   type?: string;
   id: string;
+  className?: string;
 }
 
 export const FormInput: React.FC<FormInputProps> = ({
@@ -15,13 +16,14 @@ export const FormInput: React.FC<FormInputProps> = ({
   onChange,
   type = "text",
   id,
+  className,
 }) => {
   return (
-    <div className="mb-10">
+    <div className={`mb-5 ${className}`}>
       <label htmlFor={id} className="mb-2 text-lg text-black block">
         {label}
       </label>
-      <div className="w-[393px] max-sm:w-full">
+      <div className={`w-[393px] max-sm:w-full`}>
         <input
           id={id}
           type={type}

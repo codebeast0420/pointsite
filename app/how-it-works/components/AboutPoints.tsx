@@ -4,7 +4,7 @@ import * as React from "react";
 import { CategoryTitle } from "@/components/comps/CategoryTitle";
 export const AboutPoints: React.FC = () => {
 	return (
-		<section className="mt-14 max-w-full max-md:mt-10">
+		<section className="mt-14 mb-60 max-w-full max-md:mt-10">
 			<CategoryTitle title="About points" />
 			<div className="flex ml-10 w-[826px] max-md:w-full max-md:ml-0 gap-5 max-md:mt-2 mt-15 max-md:flex-col">
 				<div className="w-[33%] max-md:w-full">

@@ -52,7 +52,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
               </a>
             </div>
           </div>
-          <div className="ml-6 flex gap-2 max-sm:mt-0 mt-12 items-center p-3 bg-neutral-100 rounded-full">
+          <div className="ml-6 flex gap-2 max-sm:mt-0 mt-12 items-center p-3 bg-white rounded-full">
             <GoogleLogo />
             <p className="text-base font-bold">Install Extension</p>
           </div>
@@ -92,7 +92,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
         </div>
       </div>
 
-      <div className="flex max-sm:flex-col justify-between pt-5 border-solid border-t-[0.5px] border-t-zinc-300">
+      <div className="flex justify-start max-sm:flex-col-reverse max-sm:gap-10 gap-40 pt-5 border-solid border-t-[0.5px] border-t-zinc-300">
         <p className="text-sm">Copyright © 2024 Raku Earn Inc.</p>
         <nav className="flex gap-8 max-sm:flex-col max-sm:gap-2 max-sm:mt-4" aria-label="Legal">
           {policies.map((policy, index) => (

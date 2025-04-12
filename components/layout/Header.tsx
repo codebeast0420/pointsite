@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "./Button";
 import Link from "next/link";
 import { ChevronRight, UserRound } from "lucide-react";
@@ -17,6 +17,10 @@ const Header: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLogedin, setIsLogedin] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
+
+	useEffect(() => {
+		setIsLogedin(localStorage.getItem("isLoggedIn") === "true");
+	}, []);
 
 	const router = useRouter();
 
@@ -68,7 +72,11 @@ const Header: React.FC = () => {
 										<ChevronRight />
 									</Link>
 									<button
-										onClick={() => {/* Add logout logic here */ }}
+										onClick={() => {
+											localStorage.removeItem("isLoggedIn");
+											setIsLogedin(false);
+											router.push("/");
+										}}
 										className="flex items-center justify-between w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-neutral-50"
 									>
 										<p>Log Out</p>
@@ -114,7 +122,11 @@ const Header: React.FC = () => {
 					<div className="flex flex-col gap-4 mt-8">
 						<Button variant="secondary" className="w-full">AI Dashboard</Button>
 						{isLogedin ? (
-							<Button variant="primary" className="w-full">Log Out</Button>
+							<Button variant="primary" className="w-full" onClick={() => {
+								localStorage.removeItem("isLoggedIn");
+								setIsLogedin(false);
+								router.push("/");
+							}}>Log Out</Button>
 						) : (
 							<Button variant="primary" className="w-full" onClick={() => router.push("/login")}>Login</Button>
 						)}

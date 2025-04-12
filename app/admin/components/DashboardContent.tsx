@@ -7,21 +7,21 @@ export const DashboardContent: React.FC = () => {
 			<div className="mt-28 w-full max-md:mt-10 max-md:max-w-full">
 				<section className="max-md:max-w-full">
 					<div className="flex gap-5 max-md:w-full max-sm:px-2 max-md:flex-col max-md:items-center">
-						<div className="w-6/12 max-md:ml-0 max-md:w-full">
+						<div className="max-md:ml-0 max-md:w-full">
 							<StatCard title="Total users:" value="1,234" />
 						</div>
-						<div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+						<div className="ml-5 max-md:ml-0 max-md:w-full">
 							<StatCard title="Total points distributed" value="98,230" />
 						</div>
 					</div>
 				</section>
 
-				<section className="mt-28 max-md:mt-10 max-md:max-w-full">
+				<section className="mt-20 max-md:mt-10 max-md:max-w-full">
 					<div className="flex gap-5 max-md:w-full max-sm:px-2 max-md:flex-col max-md:items-center">
-						<div className="w-6/12 max-md:ml-0 max-md:w-full">
+						<div className="max-md:ml-0 max-md:w-full">
 							<StatCard title="Exchanges today:" value="23" />
 						</div>
-						<div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+						<div className="ml-5 max-md:ml-0 max-md:w-full">
 							<StatCard
 								title="Pending requests:"
 								value="4"

@@ -9,6 +9,7 @@ import { ExchangeHistoryItems } from "@/constants/constants";
 
 export const PointPassbook: React.FC = () => {
 	const [selectedTab, setSelectedTab] = useState('earned');
+	const [selectedDate, setSelectedDate] = useState('Last 7 days');
 
 	return (
 		<section className="mb-10">
@@ -20,13 +21,20 @@ export const PointPassbook: React.FC = () => {
 			<div className="p-9 rounded-xl bg-neutral-100">
 				<div className="flex justify-between items-center mb-5">
 					<h3 className="text-lg font-semibold text-black">Results (23)</h3>
-					<button className="flex gap-2.5 items-center px-5 py-3.5 bg-white rounded-xl border border-solid border-zinc-300 border-opacity-90">
-						<Calendar color="black" />
-						<span className="text-base font-medium text-black">
-							Last 7 days
-						</span>
-						<ChevronDown />
-					</button>
+					<div className="relative">
+						<Calendar className="z-10 mt-[-1px] pointer-events-none absolute left-2 top-1/2 -translate-y-1/2" width={20} height={20} />
+						<select
+							id="selectedDate"
+							value={selectedDate}
+							onChange={(e) => setSelectedDate(e.target.value)}
+							className="px-9 py-2 relative rounded-lg border border-zinc-300 appearance-none bg-white cursor-pointer w-[180px]"
+						>
+							<option value="Last 7 days">Last 7 days</option>
+							<option value="Last 30 days">Last 30 days</option>
+							<option value="Last 90 days">Last 90 days</option>
+						</select>
+						<ChevronDown className="absolute pointer-events-none right-2 top-1/2 -translate-y-1/2" />
+					</div>
 				</div>
 				<div className="flex flex-col gap-5">
 					{selectedTab === 'earned' ? (

@@ -2,13 +2,22 @@
 
 import React, { useState } from "react";
 import { AuthButton } from "./AuthButton";
+import { useRouter } from "next/navigation";
 
 export const LoginForm: React.FC = () => {
+	const router = useRouter();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
+		localStorage.setItem("isLoggedIn", "true");
+		if (localStorage.getItem("isLoggedIn") === "true" && email === "admin@gmail.com" && password === "admin") {
+			router.push("/admin");
+		}
+		if (localStorage.getItem("isLoggedIn") === "true" && email !== "admin@gmail.com") {
+			router.push("/me");
+		}
 		// Handle login logic here
 	};
 

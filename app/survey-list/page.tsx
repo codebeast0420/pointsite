@@ -11,7 +11,7 @@ const InputDesign: React.FC = () => {
 		<Layout>
 			<div className="px-12 max-md:px-2">
 				<Header />
-				<div className="px-16 py-0 max-md:px-5 max-md:py-0">
+				<div className="px-16 py-10 max-md:px-5 max-md:py-0">
 					<RecommendedSection />
 					<AllSurveysSection />
 				</div>

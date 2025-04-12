@@ -14,28 +14,28 @@ export const FAQs = [
 		description: "Raku Earn is a point-earning platform where you can complete surveys and exchange points for real rewards. It comes with a built-in AI assistant that fills out surveys for you automatically."
 	},
 	{
-		title: "How do I get started?",
-		description: "Create an account on the Raku Earn point site, then create a Raku Earn AI dashboard account. Next, install the Raku Earn Chrome extension, enter your user details, and you're ready to start using the automation feature."
-	},
-	{
-		title: "Do I need to fill out surveys myself?",
-		description: "No. Our AI tool can auto-fill surveys for you. Just make sure your profile information is complete in the Raku Earn AI dashboard."
-	},
-	{
-		title: "Can I use the AI on other sites?",
-		description: "No. Raku Earn AI only works within the official Raku Earn point site. It does not support other external point sites."
-	},
-	{
 		title: "How does this actually work?",
 		description: "Raku Earn AI works as an in-browser automation tool. This means it operates directly on your device, not on a remote server. To keep it running properly, make sure your survey list page is open and your computer stays powered on. If you close the tab or shut down your device, the AI will stop working."
+	},
+	{
+		title: "How do I get started?",
+		description: "Create an account on the Raku Earn point site, then create a Raku Earn AI dashboard account. Next, install the Raku Earn Chrome extension, enter your user details, and you're ready to start using the automation feature."
 	},
 	{
 		title: "Is Raku Earn free to use?",
 		description: "Yes. Creating an account and using the AI tool is completely free."
 	},
 	{
+		title: "Do I need to fill out surveys myself?",
+		description: "No. Our AI tool can auto-fill surveys for you. Just make sure your profile information is complete in the Raku Earn AI dashboard."
+	},
+	{
 		title: "How can I redeem my points?",
 		description: "Go to the 'Point Exchange' page and choose your payout method (e.g., PayPay, bank transfer, or gift cards). Click apply and you will receive your payout within 12 hours."
+	},
+	{
+		title: "Can I use the AI on other sites?",
+		description: "No. Raku Earn AI only works within the official Raku Earn point site. It does not support other external point sites."
 	},
 	{
 		title: "The AI didn't work. What should I do?",
@@ -204,7 +204,7 @@ export const HistoryItems = [
 	},
 ];
 
-export interface ExchangeHistoryItem {	
+export interface ExchangeHistoryItem {
 	image: string;
 	title: string;
 	amount: string;
@@ -235,9 +235,9 @@ export const ExchangeHistoryItems: ExchangeHistoryItem[] = [
 	},
 ];
 
-export const HeaderLinks =[
-	{title: "How it Works", href: "/how-it-works"},
-	{title: "Survey List", href: "/survey-list"},
-	{title: "Point Exchange", href: "/point-exchange"},
+export const HeaderLinks = [
+	{ title: "How it Works", href: "/how-it-works" },
+	{ title: "Survey List", href: "/survey-list" },
+	{ title: "Point Exchange", href: "/point-exchange" },
 	// {title: "My Account", href: "/me"}
 ]

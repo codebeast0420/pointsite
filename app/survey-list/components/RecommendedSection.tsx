@@ -1,12 +1,12 @@
 import React from "react";
 import { SurveyCard } from "./SurveyCard";
-import { LikeIcon } from "./Icons";
+import { ThumbsUp } from "lucide-react";
 
 export const RecommendedSection: React.FC = () => {
   return (
     <section>
       <div className="flex gap-2 items-center mb-8">
-        <LikeIcon />
+        <ThumbsUp color="#8771EF" />
         <h2 className="text-2xl font-bold text-violet-500">
           Today's Recommend
         </h2>

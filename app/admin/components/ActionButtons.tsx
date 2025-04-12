@@ -30,7 +30,7 @@ export const ActionButtons: React.FC<ActionButtonsProps> = ({
       </button>
       <button
         onClick={onGoBack}
-        className="mt-11 text-lg font-bold text-center text-black cursor-pointer w-full"
+        className="text-lg font-bold text-center text-black cursor-pointer w-full"
         aria-label="Go back to previous page"
       >
         Go back
