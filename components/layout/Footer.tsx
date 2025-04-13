@@ -96,7 +96,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
           </div>
         </div>
 
-        <div className="flex justify-start max-sm:flex-col-reverse max-sm:gap-10 gap-40 pt-5 border-solid border-t-[0.5px] border-t-zinc-300">
+        <div className="flex ml-6 max-md:ml-0 justify-start max-sm:flex-col-reverse max-sm:gap-10 gap-40 pt-5 border-solid border-t-[0.5px] border-t-zinc-300">
           <p className="text-sm">Copyright © 2024 Raku Earn Inc.</p>
           <nav className="flex gap-8 max-sm:flex-col max-sm:gap-2 max-sm:mt-4" aria-label="Legal">
             {policies.map((policy, index) => (
