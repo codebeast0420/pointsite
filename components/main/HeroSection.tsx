@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
 	];
 
 	return (
-		<section className="flex flex-row items-center justify-around max-[1100px]:p-8 max-[1100px]:gap-8 max-[1100px]:flex-col max-md:p-5">
+		<section className="flex flex-row items-center justify-around max-[1100px]:p-8 max-[1100px]:gap-8 max-[1100px]:flex-col max-md:p-5 mt-[30px]">
 			<div className="ml-[7%]">
 				<h1 className="mb-8 text-5xl font-bold max-sm:text-4xl">
 					<span>Let AI take surveys</span>
@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
 					<Button variant="secondary">Get AI</Button>
 				</div>
 			</div>
-			<div className="relative flex max-sm:mt-16">
+			<div className="relative mt-[-50px] flex max-sm:mt-4">
 				<Image src={LandHero} alt="Land Hero" width={737} height={538} />
 			</div>
 		</section>

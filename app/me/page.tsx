@@ -12,7 +12,7 @@ export default function Page () {
 		<Layout>
 			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
 				<Header />
-				<main className="px-26 py-10 max-md:px-5 max-md:py-10">
+				<main className="pl-20 max-md:pl-5 pr-10 max-md:pr-5 py-10 max-md:px-5 max-md:py-10">
 					<AccountSummary />
 					<PointPassbook />
 					<OtherSettings />

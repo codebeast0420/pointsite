@@ -27,41 +27,41 @@ export const AccountForm = () => {
 
   return (
     <section className="flex flex-col items-start w-full">
-      <h1 className="mt-10 ml-20 text-2xl font-bold text-black max-md:mt-10 max-md:ml-2.5">
+      <h1 className="mt-10 text-2xl font-bold text-black max-md:mt-10 max-md:ml-2.5">
         Account setting
       </h1>
 
-      <div className="flex flex-col w-full gap-8">
-        <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 mt-10 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black whitespace-nowrap">
-          <label htmlFor="nickname" className="my-auto w-[20%]">Nickname</label>
+      <div className="flex flex-col w-full">
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+          <label htmlFor="nickname" className="my-auto w-[18%]">Nickname</label>
           <input
             id="nickname"
             type="text"
             value={uerProfile.nickname}
-            className="px-5 py-3 rounded-md border border-solid border-zinc-300 border-opacity-90"
+            className="px-4 py-0 h-10 rounded-md border border-solid border-zinc-300 border-opacity-90 w-[393px] max-sm:w-full"
             onChange={(e) => setUserProfile({ ...uerProfile, nickname: e.target.value })}
           />
         </div>
 
-        <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black">
-          <label htmlFor="email" className="my-auto w-[20%]">Email address</label>
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+          <label htmlFor="email" className="my-auto w-[18%]">Email address</label>
           <input
             id="email"
             type="email"
             value={uerProfile.email}
-            className="px-5 py-3 whitespace-nowrap rounded-md border border-solid border-zinc-300 border-opacity-90"
+            className="px-4 py-0 h-10 rounded-md border border-solid border-zinc-300 border-opacity-90 w-[393px] max-sm:w-full"
             onChange={(e) => setUserProfile({ ...uerProfile, email: e.target.value })}
           />
         </div>
 
-        <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black">
-          <label htmlFor="password" className="my-auto w-[20%]">Password</label>
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+          <label htmlFor="password" className="my-auto w-[18%]">Password</label>
           <div className="flex gap-5">
             <input
               id="password"
               type="password"
               value={uerProfile.pwd}
-              className="px-5 py-3 whitespace-nowrap rounded-md border border-solid border-zinc-300 border-opacity-90"
+              className="px-4 py-0 h-10 rounded-md border border-solid border-zinc-300 border-opacity-90 w-[393px] max-sm:w-full"
               onChange={(e) => setUserProfile({ ...uerProfile, pwd: e.target.value })}
             />
             <button className="my-auto cursor-pointer hover:text-gray-700">
@@ -70,8 +70,8 @@ export const AccountForm = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black">
-          <label htmlFor="dob" className="my-auto w-[20%] text-base font-medium text-black">
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+          <label htmlFor="dob" className="my-auto w-[18%] text-base font-medium text-black">
             Date of birth
           </label>
           <div className="flex gap-2.5">
@@ -82,8 +82,8 @@ export const AccountForm = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black">
-          <label htmlFor="gender" className="my-auto w-[20%] text-base font-medium text-black">Gender</label>
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+          <label htmlFor="gender" className="my-auto w-[18%] text-base font-medium text-black">Gender</label>
           <div className="flex gap-8">
             <RadioButton
               label="Male"
@@ -106,14 +106,14 @@ export const AccountForm = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap pb-5 border-b border-solid border-zinc-300 border-opacity-90 gap-5 max-md:ml-2.5 ml-28 max-w-full text-base font-medium text-black whitespace-nowrap">
-          <label htmlFor="prefectures" className="my-auto w-[20%]">Prefectures</label>
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+          <label htmlFor="prefectures" className="my-auto w-[18%]">Prefectures</label>
           <div className="relative">
             <select
               id="prefectures"
               value={uerProfile.prefectures}
               onChange={(e) => setUserProfile({ ...uerProfile, prefectures: e.target.value })}
-              className="px-4 py-2 relative rounded-lg border border-zinc-300 appearance-none bg-white cursor-pointer w-[120px]"
+              className="px-4 py-2 relative rounded-lg border border-zinc-300 appearance-none bg-white cursor-pointer w-[150px]"
             >
               {Prefectures.map((prefecture) => (
                 <option key={prefecture} value={prefecture}>{prefecture}</option>
@@ -124,7 +124,7 @@ export const AccountForm = () => {
         </div>
 
         <button
-          className="mt-10 cursor-pointer max-md:ml-2.5 ml-28 text-base font-medium text-red-600 hover:text-red-700 text-left"
+          className="cursor-pointer max-md:ml-2.5 p-8 text-base font-medium text-red-600 hover:text-red-700 text-left"
           aria-label="Delete account"
         >
           Delete account

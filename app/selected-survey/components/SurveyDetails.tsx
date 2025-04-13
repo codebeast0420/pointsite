@@ -30,26 +30,18 @@ export const SurveyDetails: React.FC = () => {
                 Survey title will go here as you can see the max length if there
                 is more
               </h1>
-              <div className="flex gap-5 justify-between mt-8 max-w-full text-base text-black w-[300px]">
-                <span className="font-bold">Survey Provider:</span>
+              <div className="flex border-b pb-3 border-[#DDDDDD] gap-5 justify-start mt-8 max-w-full text-base text-black w-full">
+                <span className="font-bold w-[30%]">Survey Provider:</span>
                 <span className="font-medium">XYZ Company</span>
               </div>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/87b5d4114987481390e084a568fbb563/b594f20b4a01d8dc61461be56ac20370002410e7?placeholderIfAbsent=true"
-                alt="Divider"
-                className="object-contain self-stretch mt-2 w-full aspect-[250] max-md:max-w-full"
-              />
-              <div className="flex gap-5 justify-between mt-2.5 max-w-full text-base text-black w-[281px]">
-                <span className="font-bold">Added Date:</span>
+              
+              <div className="flex gap-5 pb-3 border-b border-[#DDDDDD] justify-start mt-2.5 max-w-full text-base text-black w-full">
+                <span className="font-bold w-[30%]">Added Date:</span>
                 <span className="font-medium">12/23/2025</span>
               </div>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/87b5d4114987481390e084a568fbb563/b594f20b4a01d8dc61461be56ac20370002410e7?placeholderIfAbsent=true"
-                alt="Divider"
-                className="object-contain self-stretch mt-2 w-full aspect-[250] max-md:max-w-full"
-              />
-              <div className="flex gap-5 justify-between mt-2 max-w-full text-base text-black w-[284px]">
-                <span className="font-bold">Estimated Time:</span>
+              
+              <div className="flex gap-5 justify-start mt-2 max-w-full text-base text-black w-full">
+                <span className="font-bold w-[30%]">Estimated Time:</span>
                 <span className="font-medium">~10 minutes</span>
               </div>
               <div className="flex items-center gap-3.5 self-end mt-12 max-md:mt-10">

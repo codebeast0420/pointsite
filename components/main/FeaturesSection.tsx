@@ -23,7 +23,7 @@ const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex gap-48 max-sm:gap-20 justify-center py-12 max-[1100px]:flex-col max-md:p-8">
+    <section className="flex gap-48 max-sm:gap-20 justify-center py-30 max-[1100px]:flex-col max-md:p-8">
       <div className="relative flex items-center justify-center">
         <Image src={FeatureImage} alt="Feature Image" width={375} height={295}/>
       </div>

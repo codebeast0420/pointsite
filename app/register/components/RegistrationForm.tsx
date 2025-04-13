@@ -6,7 +6,7 @@ import { RadioButton } from "@/app/account-setting/components/RadioButton";
 import { DateSelector } from "@/app/account-setting/components/DateSelector";
 import { UserProfile } from "@/app/account-setting/components/AccountForm";
 import { Prefectures } from "@/constants/constants";
-
+import { ChevronDown } from "lucide-react";
 export function RegistrationForm() {
   const [userProfile, setUserProfile] = useState<UserProfile>({
     nickname: "",
@@ -106,13 +106,14 @@ export function RegistrationForm() {
 
       <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
         <RequiredLabel text="Prefectures" />
-        <div className="relative w-[199px]">
-          <select className="px-4 py-0 h-10 rounded-md border border-solid border-zinc-300 border-opacity-90 w-[393px] max-sm:w-full">
+        <div className="relative">
+          <select className="px-4 py-2 relative rounded-lg border border-zinc-300 appearance-none bg-white cursor-pointer w-[150px]">
             <option value="" disabled defaultValue="" />
             {Prefectures.map((prefecture) => (
               <option key={prefecture} value={prefecture}>{prefecture}</option>
             ))}
           </select>
+          <ChevronDown className="absolute pointer-events-none right-2 top-1/2 -translate-y-1/2" />
         </div>
       </div>
 

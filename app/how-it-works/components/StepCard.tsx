@@ -17,7 +17,7 @@ export const StepCard: React.FC<StepCardProps> = ({
 }) => {
   return (
     <article className="flex flex-col grow px-6 pt-5 pb-8 w-full font-bold text-center rounded-3xl bg-neutral-100 max-md:px-5 max-md:mt-6">
-      <div className="text-2xl text-indigo-200">
+      <div className="text-2xl text-[#D4C8FF]">
         <span style={{ fontSize: "24px" }}>step.</span>
         <span style={{ fontSize: "40px" }}>{stepNumber}</span>
       </div>
@@ -26,7 +26,7 @@ export const StepCard: React.FC<StepCardProps> = ({
         <img
           src={image}
           alt={`Step ${stepNumber} illustration`}
-          className="object-contain self-center mt-6 max-w-full aspect-[1.11] w-[155px]"
+          className="object-fill self-center mt-6 max-w-full h-[155px] min-h-[155px]"
         />
       )}
       {points && (
