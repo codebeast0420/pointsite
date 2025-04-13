@@ -16,7 +16,7 @@ const GiftCardExchange: React.FC = () => {
 	const { id } = useParams();
 	return (
 		<Layout>
-			<div className="px-12 max-md:px-2">
+			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
 				<Header />
 				<main>
 					<BackButton className="ml-36 max-md:ml-5"/>

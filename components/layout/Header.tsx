@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ChevronRight, UserRound } from "lucide-react";
 import { HeaderLinks } from "@/constants/constants";
 import { useRouter } from "next/navigation";
+import Logo from '@/assets/images/logo.png';
 
 const MobileLink = ({ href, title, onClick }: { href: string, title: string, onClick: () => void }) => {
 	return (
@@ -28,7 +29,7 @@ const Header: React.FC = () => {
 		<header className="flex items-center justify-between py-8">
 			<div className="flex items-center gap-10">
 				<Link href="/" className="text-2xl font-bold">
-					<img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b4a2606fc0d129ed5f9dc4774ede3ece5dba4f4" alt="Logo" className="h-[58px] w-[172px]" />
+					<img src={Logo.src} alt="Logo" className="h-[58px] w-[172px]" />
 				</Link>
 			</div>
 			<nav className="flex gap-10 max-[906px]:hidden" aria-label="Main navigation">

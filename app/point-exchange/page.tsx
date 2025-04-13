@@ -13,7 +13,7 @@ function PointExchange() {
 
 	return (
 		<Layout>
-			<div className="px-12 max-md:px-2">
+			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
 				<Header />
 				<HeroSection />
 				<PaymentSection

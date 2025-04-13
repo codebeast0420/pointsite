@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import GoogleLogo from "../svg/GoogleLogo";
 import InstagramLogo from "../svg/InstagramLogo";
+import Logo from '@/assets/images/logo.png';
 
 interface MenuItems {
   [key: string]: { label: string, href: string }[];
@@ -33,11 +34,11 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
   ];
 
   return (
-    <footer className={`py-12 px-10 max-sm:px-5 bg-[#F6F5F9] max-sm:py-8 ${className}`}>
-      <div className="flex max-[600px]:flex-col justify-between">
+    <footer className={`py-12 w-full flex flex-col items-center justify-between px-10 max-sm:px-5 bg-[#F6F5F9] max-sm:py-8 ${className}`}>
+      <div className="flex max-[600px]:flex-col w-full max-w-[1440px] justify-between">
         <div className="flex max-sm:flex-row max-sm:items-center flex-col gap-5 items-start mb-8">
           <div className="flex flex-col gap-5 items-start mb-8">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b4a2606fc0d129ed5f9dc4774ede3ece5dba4f4" alt="Logo" className="h-[58px] w-[172px]" />
+            <img src={Logo.src} alt="Logo" className="h-[58px] w-[172px]" />
             <div className="flex gap-3 ml-6">
               <a href="#twitter" aria-label="Twitter">
                 <div

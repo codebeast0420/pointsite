@@ -8,7 +8,7 @@ import { Layout } from "@/components/layout/Layout";
 const RegistrationPage = () => {
 	return (
 		<Layout>
-			<div className="px-12 max-md:px-2">
+			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
 				<Header />
 				<main className="mt-20 px-20 py-0 max-md:px-10 max-md:py-0 max-sm:px-5 max-sm:py-0">
 					<h1 className="mb-5 text-3xl font-bold text-black">Registration</h1>

@@ -10,7 +10,7 @@ import { BackButton } from "../point-exchange-selected/components/BackButton";
 const SelectedSurvey: React.FC = () => {
 	return (
 		<Layout>
-			<div className="px-12 max-md:px-2">
+			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
 				<Header />
 				<div className="flex flex-col items-start px-16 w-full max-md:px-5 mb-20 max-md:max-w-full">
 					<BackButton className="ml-10 max-md:ml-0"/>
