@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ExchangeHistoryItem } from "@/constants/constants";
-
+import Image from "next/image";
 interface ExchangeHistoryCardProps {
 	index: number;
 	item: ExchangeHistoryItem;
@@ -20,7 +20,7 @@ export const ExchangeHistoryCard: React.FC<ExchangeHistoryCardProps> = ({
 		<>
 			<div className="flex flex-wrap gap-5 justify-between w-full text-base max-md:max-w-full">
 				<div className="flex gap-5">
-					<img
+					<Image
 						src={item.image}
 						alt={item.title}
 						className="object-contain shrink-0 aspect-square w-[70px]"
