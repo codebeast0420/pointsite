@@ -18,10 +18,10 @@ const GiftCardExchange: React.FC = () => {
 		<Layout>
 			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
 				<Header />
-				<main>
-					<BackButton className="ml-36 max-md:ml-5"/>
+				<main className="pl-26 max-md:pl-5 pr-10 max-md:pr-5">
+					<BackButton className="max-md:ml-5"/>
 					<GiftCardSelector id={id as PaymentMethodId} />
-					<div className="px-36 py-0 max-md:px-5 max-md:py-0">
+					<div className="py-0 max-md:px-5 max-md:py-0">
 						<ExchangeDetails />
 						<ExchangeProcedure />
 					</div>

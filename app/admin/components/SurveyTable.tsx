@@ -18,7 +18,7 @@ export function SurveyTable({ setIsSurveyDetailOpen }: { setIsSurveyDetailOpen: 
 	];
 
 	return (
-		<div className="w-full mt-30 overflow-x-scroll">
+		<div className="ml-5 w-[72%] max-md:ml-0 max-md:w-full mt-30 overflow-x-scroll">
 			<table className="w-full border-collapse">
 				<thead>
 					<tr className="border-b border-black">

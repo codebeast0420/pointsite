@@ -22,7 +22,7 @@ export const PaymentSection: React.FC<PaymentSectionProps> = ({
 					{Object.values(PaymentCardImg).map((paymentMethod) => (
 						<PaymentMethodCard
 							key={paymentMethod.title}
-							iconUrl={paymentMethod.icon}
+							iconUrl={paymentMethod.icon.src}
 							title={paymentMethod.title}
 							onClick={() => {
 								router.push(`/point-exchange-selected/${paymentMethod.id}`);

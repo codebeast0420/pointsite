@@ -23,7 +23,7 @@ const AdminPage = () => {
 	const [selectedSurvey, setSelectedSurvey] = React.useState<Survey | null>(null);
 	return (
 		<div className="max-w-[1440px] mx-auto overflow-hidden pr-20 bg-neutral-100 max-md:pr-5">
-			<div className="flex gap-5 max-md:flex-col">
+			<div className="flex w-full gap-5 max-md:flex-col">
 				<Sidebar navItems={navItems} activeItem={activeItem} setActiveItem={setActiveItem} setIsSurveyDetailOpen={setIsSurveyDetailOpen} />
 				{activeItem === "Home" && !isSurveyDetailOpen && <DashboardContent />}
 				{activeItem === "User" && !isSurveyDetailOpen && <UserTable />}

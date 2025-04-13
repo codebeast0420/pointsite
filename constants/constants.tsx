@@ -7,7 +7,12 @@ import Step6Img from "@/assets/images/Group 1000004596.png";
 import Redemption1 from "@/assets/images/redemption1.png";
 import Redemption2 from "@/assets/images/redemption2.png";
 import Redemption3 from "@/assets/images/redemption3.png";
-
+import AmazonLogo from "@/assets/images/amazon.png";
+import AppleLogo from "@/assets/images/apple.png";
+import GooglePlayLogo from "@/assets/images/google_play.png";
+import PayPayLogo from "@/assets/images/paypay.png";
+import BankTransferLogo from "@/assets/images/bank_transfer.png";
+import { StaticImageData } from "next/image";
 export const FAQs = [
 	{
 		title: "What is Raku Earn?",
@@ -105,24 +110,24 @@ export const redemptionSteps = [
 ];
 
 interface RedemptionOption {
-	icon: string;
+	icon: StaticImageData;
 	title: string;
 }
 
 export const RedemptionOptions: RedemptionOption[] = [
-	{ icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/a78f319276fc58a8b12544a443d0eee2d8512a89", title: "Bank Transfer" },
-	{ icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/e9dfd132c73fa272965be834ab54b75830d886ef", title: "Amazon" },
-	{ icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/e6a28d88640d3adade107f7d116324ff65f0f679", title: "Apple Store" },
-	{ icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/f0570a2fecc2ea7487a08aa6620088fd00b0c6f4", title: "Google Play" },
-	{ icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/a22db23b7f6de0aee8c7b5f2c141537631c22889", title: "PayPay" },
+	{ icon: BankTransferLogo, title: "Bank Transfer" },
+	{ icon: AmazonLogo, title: "Amazon" },
+	{ icon: AppleLogo, title: "Apple Store" },
+	{ icon: GooglePlayLogo, title: "Google Play" },
+	{ icon: PayPayLogo, title: "PayPay" },
 ];
 
 export const PaymentCardImg = {
-	bankTransfer: { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/a78f319276fc58a8b12544a443d0eee2d8512a89", title: "Bank Transfer", id: "bankTransfer" },
-	amazon: { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/e9dfd132c73fa272965be834ab54b75830d886ef", title: "Amazon", id: "amazon" },
-	apple: { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/e6a28d88640d3adade107f7d116324ff65f0f679", title: "Apple Store", id: "apple" },
-	googlePlay: { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/f0570a2fecc2ea7487a08aa6620088fd00b0c6f4", title: "Google Play", id: "googlePlay" },
-	payPay: { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/a22db23b7f6de0aee8c7b5f2c141537631c22889", title: "PayPay", id: "payPay" },
+	bankTransfer: { icon: BankTransferLogo, title: "Bank Transfer", id: "bankTransfer" },
+	amazon: { icon: AmazonLogo, title: "Amazon", id: "amazon" },
+	apple: { icon: AppleLogo, title: "Apple Store", id: "apple" },
+	googlePlay: { icon: GooglePlayLogo, title: "Google Play", id: "googlePlay" },
+	payPay: { icon: PayPayLogo, title: "PayPay", id: "payPay" },
 };
 
 export const ExchangeDetails = [
@@ -205,7 +210,7 @@ export const HistoryItems = [
 ];
 
 export interface ExchangeHistoryItem {
-	image: string;
+	image: StaticImageData;
 	title: string;
 	amount: string;
 	status: "pending" | "complete" | "declined";
@@ -240,4 +245,54 @@ export const HeaderLinks = [
 	{ title: "Survey List", href: "/survey-list" },
 	{ title: "Point Exchange", href: "/point-exchange" },
 	// {title: "My Account", href: "/me"}
+]
+
+export const Prefectures = [
+	"Hokkaido",
+	"Aomori",
+	"Iwate",
+	"Miyagi",
+	"Akita",
+	"Yamagata",
+	"Fukushima",
+	"Ibaraki",
+	"Tochigi",
+	"Gunma",
+	"Saitama",
+	"Chiba",
+	"Tokyo",
+	"Kanagawa",
+	"Niigata",
+	"Toyama",
+	"Ishikawa",
+	"Fukui",
+	"Yamanashi",
+	"Nagano",
+	"Gifu",
+	"Shizuoka",
+	"Aichi",
+	"Mie",
+	"Shiga",
+	"Kyoto",
+	"Osaka",
+	"Hyogo",
+	"Nara",
+	"Wakayama",
+	"Tottori",
+	"Shimane",
+	"Okayama",
+	"Hiroshima",
+	"Yamaguchi",
+	"Tokushima",
+	"Kagawa",
+	"Ehime",
+	"Kochi",
+	"Fukuoka",
+	"Saga",
+	"Nagasaki",
+	"Kumamoto",
+	"Oita",
+	"Miyazaki",
+	"Kagoshima",
+	"Okinawa",
 ]

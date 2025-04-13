@@ -11,7 +11,7 @@ export const SurveyForm: React.FC = () => {
 	};
 
 	return (
-		<section className="ml-5 w-[83%] mt-30 max-md:mt-10 max-md:ml-0 max-md:w-full">
+		<section className="ml-5 w-[72%] max-md:ml-0 max-md:w-full mt-30 max-md:mt-10">
 			<div className="flex flex-col items-start self-stretch my-auto w-full max-md:mt-10">
 				<form
 					onSubmit={handleSubmit}

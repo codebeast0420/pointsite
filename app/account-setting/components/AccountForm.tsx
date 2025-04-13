@@ -3,7 +3,7 @@ import { useState } from "react";
 import { RadioButton } from "./RadioButton";
 import { DateSelector } from "./DateSelector";
 import { ChevronDown } from "lucide-react";
-
+import { Prefectures } from "@/constants/constants";
 export interface UserProfile {
   nickname: string,
   email: string,
@@ -115,11 +115,9 @@ export const AccountForm = () => {
               onChange={(e) => setUserProfile({ ...uerProfile, prefectures: e.target.value })}
               className="px-4 py-2 relative rounded-lg border border-zinc-300 appearance-none bg-white cursor-pointer w-[120px]"
             >
-              <option value="Tokyo">Tokyo</option>
-              <option value="Osaka">Osaka</option>
-              <option value="Kyoto">Kyoto</option>
-              <option value="Hiroshima">Hiroshima</option>
-              <option value="Fukuoka">Fukuoka</option>
+              {Prefectures.map((prefecture) => (
+                <option key={prefecture} value={prefecture}>{prefecture}</option>
+              ))}
             </select>
             <ChevronDown className="absolute pointer-events-none right-2 top-1/2 -translate-y-1/2" />
           </div>

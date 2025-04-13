@@ -9,7 +9,7 @@ export const AllSurveysSection: React.FC = () => {
 
 
 	return (
-		<section>
+		<section className="mt-40">
 			<div className="flex gap-2 items-center mb-8">
 			<LayoutGrid color="#8771EF" />
 				<h2 className="text-2xl font-bold text-violet-500">All Surveys</h2>
@@ -27,8 +27,11 @@ export const AllSurveysSection: React.FC = () => {
 							onChange={(e) => setSortBy(e.target.value)}
 							className="px-4 py-2 relative rounded-lg border border-zinc-300 appearance-none bg-white cursor-pointer w-[140px]"
 						>
-							<option value="Date added">Date added</option>
-							<option value="Points">Points</option>
+							<option value="date_added">Date added</option>
+							<option value="reward">Reward</option>
+							<option value="amount">Amount</option>
+							<option value="estimated_time">Estimated time</option>
+							<option value="popularity">Popularity</option>
 						</select>
 						<ChevronDown className="absolute pointer-events-none right-2 top-1/2 -translate-y-1/2" />
 					</div>

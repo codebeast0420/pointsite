@@ -12,8 +12,8 @@ const SelectedSurvey: React.FC = () => {
 		<Layout>
 			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
 				<Header />
-				<div className="flex flex-col items-start px-16 w-full max-md:px-5 mb-20 max-md:max-w-full">
-					<BackButton className="ml-10 max-md:ml-0"/>
+				<div className="pl-26 max-md:pl-5 pr-10 max-md:pr-5 flex flex-col items-start w-full mb-20 max-md:max-w-full">
+					<BackButton className="max-md:ml-0"/>
 					<SurveyDetails />
 					<SuggestedSurveys />
 				</div>

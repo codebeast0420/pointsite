@@ -11,7 +11,7 @@ const CTASection: React.FC = () => {
         Get Raku Earn extension and let automation work for you.
       </p>
       <Button
-        variant="secondary"
+        variant="white"
         className="mx-auto my-0 w-[153px] cursor-pointer"
         ariaLabel="Get started with Raku Earn"
       >

@@ -7,10 +7,10 @@ type PaymentMethodId = keyof typeof PaymentCardImg;
 
 export const GiftCardSelector: React.FC<{ id: PaymentMethodId }> = ({ id }) => {
 	return (
-		<section className="px-36 py-0 max-md:px-5 max-md:py-0">
-			<div className="px-10 py-16 mt-5 rounded-3xl bg-neutral-100 max-sm:px-5 max-sm:py-8">
+		<section className="self-center px-14 py-5 mt-5 w-full rounded-3xl bg-neutral-100 max-w-[1300px] max-md:px-5 max-md:max-w-full">
+			<div className="px-10 py-5 mt-5 rounded-3xl bg-neutral-100 max-sm:px-5 max-sm:py-8">
 				<div className="flex gap-24 max-[1160px]:flex-col max-[1160px]:items-center">
-					<img src={PaymentCardImg[id].icon} className="h-[214px] w-[214px]" alt="Amazon Logo" />
+					<img src={PaymentCardImg[id].icon.src} className="h-[214px] w-[214px]" alt="Amazon Logo" />
 					<div className="flex-1">
 						<h1 className="mb-9 text-2xl font-bold">{PaymentCardImg[id].title} Gift Card</h1>
 						<div>

@@ -5,6 +5,7 @@ import { RequiredLabel } from "./RequiredLabel";
 import { RadioButton } from "@/app/account-setting/components/RadioButton";
 import { DateSelector } from "@/app/account-setting/components/DateSelector";
 import { UserProfile } from "@/app/account-setting/components/AccountForm";
+import { Prefectures } from "@/constants/constants";
 
 export function RegistrationForm() {
   const [userProfile, setUserProfile] = useState<UserProfile>({
@@ -12,7 +13,7 @@ export function RegistrationForm() {
     email: "",
     pwd: "",
     dob: new Date(),
-    gender: "",
+    gender: "male",
     prefectures: "",
   });
 
@@ -28,6 +29,7 @@ export function RegistrationForm() {
           type="text"
           id="nickname"
           aria-label="Enter your nickname"
+          placeholder="Nickname"
           className="px-4 py-0 h-10 rounded-md border border-solid border-zinc-300 border-opacity-90 w-[393px] max-sm:w-full"
           value={userProfile.nickname}
           onChange={(e) => setUserProfile({ ...userProfile, nickname: e.target.value })}
@@ -40,6 +42,7 @@ export function RegistrationForm() {
           type="email"
           id="email"
           aria-label="Enter your email address"
+          placeholder="Email address"
           className="px-4 py-0 h-10 rounded-md border border-solid border-zinc-300 border-opacity-90 w-[393px] max-sm:w-full"
           value={userProfile.email}
           onChange={(e) => setUserProfile({ ...userProfile, email: e.target.value })}
@@ -53,6 +56,7 @@ export function RegistrationForm() {
             type="password"
             id="password"
             aria-label="Enter your password"
+            placeholder="Password"
             className="px-4 py-0 mb-5 h-10 rounded-md border border-solid border-zinc-300 border-opacity-90 w-[393px] max-sm:w-full"
             value={userProfile.pwd}
             onChange={(e) => setUserProfile({ ...userProfile, pwd: e.target.value })}
@@ -61,6 +65,7 @@ export function RegistrationForm() {
             type="password"
             id="confirm-password"
             aria-label="Confirm your password"
+            placeholder="Confirm password"
             className="px-4 py-0 h-10 rounded-md border border-solid border-zinc-300 border-opacity-90 w-[393px] max-sm:w-full"
             value={userProfile.pwd}
             onChange={(e) => setUserProfile({ ...userProfile, pwd: e.target.value })}
@@ -104,11 +109,9 @@ export function RegistrationForm() {
         <div className="relative w-[199px]">
           <select className="px-4 py-0 h-10 rounded-md border border-solid border-zinc-300 border-opacity-90 w-[393px] max-sm:w-full">
             <option value="" disabled defaultValue="" />
-            <option value="1">Tokyo</option>
-            <option value="2">Osaka</option>
-            <option value="3">Kyoto</option>
-            <option value="4">Sapporo</option>
-            <option value="5">Fukuoka</option>
+            {Prefectures.map((prefecture) => (
+              <option key={prefecture} value={prefecture}>{prefecture}</option>
+            ))}
           </select>
         </div>
       </div>
