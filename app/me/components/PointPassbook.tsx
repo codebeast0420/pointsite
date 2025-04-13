@@ -19,7 +19,7 @@ export const PointPassbook: React.FC = () => {
 				<SelectorButton title="Point exchange history" selected={selectedTab === 'exchange'} onClick={() => setSelectedTab('exchange')} />
 			</div>
 			<div className="p-9 rounded-xl bg-neutral-100">
-				<div className="flex justify-between items-center mb-5">
+				<div className="flex max-md:flex-col max-md:items-start max-md:gap-5 justify-between items-center mb-5">
 					<h3 className="text-lg font-semibold text-black">Results (23)</h3>
 					<div className="relative">
 						<Calendar className="z-10 mt-[-1px] pointer-events-none absolute left-2 top-1/2 -translate-y-1/2" width={20} height={20} />
