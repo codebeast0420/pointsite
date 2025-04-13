@@ -1,5 +1,6 @@
 import React from "react";
 import { RedemptionOptions } from "@/constants/constants";
+import Image from "next/image";
 const RedemptionSection: React.FC = () => {
 
   return (
@@ -13,7 +14,7 @@ const RedemptionSection: React.FC = () => {
             key={index}
             className="flex flex-col gap-2.5 justify-center items-center rounded-3xl bg-neutral-100 h-[122px] w-[156px] max-md:w-[calc(33%_-_26px)] max-sm:w-full"
           >
-            <img
+            <Image
               src={option.icon}
               alt={option.title}
               className="h-[71px] w-[71px]"
