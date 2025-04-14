@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import GoogleLogo from "../svg/GoogleLogo";
 import InstagramLogo from "../svg/InstagramLogo";
-import Logo from '@/assets/images/logo1.png';
+import Logo from '@/assets/images/logo.svg';
 import { usePathname } from "next/navigation";
 
 interface MenuItems {

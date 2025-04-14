@@ -3,7 +3,7 @@ import * as React from "react";
 import { Menu, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Logo from "@/assets/images/logo1.png";
+import Logo from "@/assets/images/logo.svg";
 
 export const Sidebar: React.FC<{ navItems: string[], activeItem: string, setActiveItem: (item: string) => void, setIsSurveyDetailOpen: (isOpen: boolean) => void }> = ({ navItems, activeItem, setActiveItem, setIsSurveyDetailOpen }) => {
 	const [isOpen, setIsOpen] = React.useState(false);

@@ -1,7 +1,7 @@
 import * as React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-export const RedemptionCard: React.FC<{ number: number, title: string, description: string, image: string }> = ({ number, title, description, image }) => {
+export const RedemptionCard: React.FC<{ number: number, title: string, description: string, image: StaticImageData }> = ({ number, title, description, image }) => {
 	return (
 		<div className="flex items-center gap-5 mt-8" aria-label="Redemption card">
 			<Image src={image} alt={title} width={100} height={100} aria-label="Redemption card image" />

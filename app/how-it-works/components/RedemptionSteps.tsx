@@ -18,7 +18,7 @@ export const RedemptionSteps: React.FC = () => {
 									number={step.number}
 									title={step.title}
 									description={step.description}
-									image={step.image.src}
+									image={step.image}
 								/>
 							))}
 						</div>

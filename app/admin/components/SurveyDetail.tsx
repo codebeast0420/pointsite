@@ -2,6 +2,8 @@
 import * as React from "react";
 import { FormInput } from "./SurveyFormInput";
 import { ActionButtons } from "./ActionButtons";
+import Image from "next/image";
+import Survey from "@/assets/images/survey.svg"
 
 export const SurveyDetail: React.FC = () => {
   const [formData, setFormData] = React.useState({
@@ -60,8 +62,8 @@ export const SurveyDetail: React.FC = () => {
         />
       </form>
       <div className="w-[62%] ml-10 flex items-start justify-center" aria-label="Survey detail image section">
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/0bc17241ccc9bd3e6f4d999e6fabd4ba7302cd73"
+        <Image
+          src={Survey}
           className="rounded-3xl w-[294px]"
           alt="Survey illustration"
         />

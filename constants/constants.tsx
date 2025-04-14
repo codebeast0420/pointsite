@@ -1,17 +1,17 @@
-import Step1Img from "@/assets/images/Group 1000004591.png";
-import Step2Img from "@/assets/images/Group 1000004588.png";
-import Step3Img from "@/assets/images/Group 1000004587.png";
-import Step4Img from "@/assets/images/Group 1000004592.png";
-import Step5Img from "@/assets/images/Group 1000004593.png";
-import Step6Img from "@/assets/images/Group 1000004596.png";
-import Redemption1 from "@/assets/images/redemption1.png";
-import Redemption2 from "@/assets/images/redemption2.png";
-import Redemption3 from "@/assets/images/redemption3.png";
-import AmazonLogo from "@/assets/images/amazon.png";
-import AppleLogo from "@/assets/images/apple.png";
-import GooglePlayLogo from "@/assets/images/google_play.png";
-import PayPayLogo from "@/assets/images/paypay.png";
-import BankTransferLogo from "@/assets/images/bank_transfer.png";
+import Step1Img from "@/assets/images/Group 1000004591.svg";
+import Step2Img from "@/assets/images/Group 1000004588.svg";
+import Step3Img from "@/assets/images/Group 1000004587.svg";
+import Step4Img from "@/assets/images/Group 1000004592.svg";
+import Step5Img from "@/assets/images/Group 1000004593.svg";
+import Step6Img from "@/assets/images/Group 1000004596.svg";
+import Redemption1 from "@/assets/images/redemption1.svg";
+import Redemption2 from "@/assets/images/redemption2.svg";
+import Redemption3 from "@/assets/images/redemption3.svg";
+import AmazonLogo from "@/assets/images/amazon.svg";
+import AppleLogo from "@/assets/images/apple.svg";
+import GooglePlayLogo from "@/assets/images/google_play.svg";
+import PayPayLogo from "@/assets/images/paypay.svg";
+import BankTransferLogo from "@/assets/images/bank_transfer.svg";
 import { StaticImageData } from "next/image";
 export const FAQs = [
 	{
@@ -192,28 +192,24 @@ export const HistoryItems = [
 			"Survey title will go here as you can see the max length if there is more",
 		points: 1000,
 		date: "4/9/2024",
-		imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/aa11d8c4fd8d99e7062aea7428f8d8d69a69465a",
 	},
 	{
 		title:
 			"Survey title will go here as you can see the max length if there is more",
 		points: 1000,
 		date: "4/9/2024",
-		imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/aa11d8c4fd8d99e7062aea7428f8d8d69a69465a",
 	},
 	{
 		title:
 			"Survey title will go here as you can see the max length if there is more",
 		points: 1000,
 		date: "4/9/2024",
-		imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/aa11d8c4fd8d99e7062aea7428f8d8d69a69465a",
 	},
 	{
 		title:
 			"Survey title will go here as you can see the max length if there is more",
 		points: 1000,
 		date: "4/9/2024",
-		imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/aa11d8c4fd8d99e7062aea7428f8d8d69a69465a",
 	},
 ];
 
@@ -304,3 +300,5 @@ export const Prefectures = [
 	"Kagoshima",
 	"Okinawa",
 ]
+
+export const SurveyLink = "https://www16.webcas.net/form/pub/ceres/kurashi?media=moppy&xuid=xuid5x9633339b07x978";

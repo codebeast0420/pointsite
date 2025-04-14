@@ -1,10 +1,10 @@
 import * as React from "react";
-
+import Image, { StaticImageData } from "next/image";
 interface StepCardProps {
   stepNumber: number;
   title: string;
   description: string;
-  image?: string;
+  image?: StaticImageData;
   points?: Array<{ amount: string }>;
 }
 
@@ -23,7 +23,7 @@ export const StepCard: React.FC<StepCardProps> = ({
       </div>
       <h3 className="mt-2 text-lg text-violet-500" aria-label="Step title">{title}</h3>
       {image && (
-        <img
+        <Image
           src={image}
           alt={`Step ${stepNumber} illustration`}
           className="object-fill self-center mt-6 max-w-full h-[155px] min-h-[155px]"

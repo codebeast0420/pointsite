@@ -14,7 +14,6 @@ export const SuggestedSurveys: React.FC = () => {
 					{[1, 2, 3, 4, 5].map((index) => (
 						<SurveyCard
 							key={index}
-							imageUrl="https://cdn.builder.io/api/v1/image/assets/87b5d4114987481390e084a568fbb563/becd79cb3724cfb5334bf8ca66452dec35212664?placeholderIfAbsent=true"
 							title="Survey title will go here as you can see the ma..."
 							points={1000}
 							isNew={index === 4 ? true : false}

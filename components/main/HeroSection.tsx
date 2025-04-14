@@ -3,7 +3,7 @@ import Image from "next/image";
 import Button from "../layout/Button";
 import UserAvatarStack from "../comps/UserAvatarStack";
 import Toggle from "../svg/Toggle";
-import LandHero from "@/assets/images/land_hero.png"
+import LandHero from "@/assets/images/land_hero.svg"
 import MessageIcon from "../svg/MessageIcon";
 import WriteIcon from "../svg/WriteIcon";
 

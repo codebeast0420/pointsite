@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Penny from "@/assets/images/5.png";
+import Penny from "@/assets/images/5.svg";
+import Yen from "@/assets/images/yen.svg";
 
 export const HeroSection = () => {
   return (
@@ -13,8 +14,8 @@ export const HeroSection = () => {
           </h1>
         </div>
         <div className="ml-5 w-[58%] max-md:ml-0 max-md:w-full">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/87b5d4114987481390e084a568fbb563/fb4476b270fba5f76e5fa06697e6d94efd533d96?placeholderIfAbsent=true"
+          <Image
+            src={Yen}
             alt="Point Exchange illustration"
             className="object-contain z-10 grow mr-0 w-full aspect-[3.04] max-md:mt-10"
           />

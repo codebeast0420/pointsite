@@ -1,9 +1,10 @@
 import React from "react";
+import Image from "next/image";
+import Survey from "@/assets/images/survey.svg"
 
 interface EarnedHistoryCardProps {
 	index: number;
 	item: {
-		imageUrl: string;
 		title: string;
 		points: number;
 		date: string;
@@ -17,8 +18,8 @@ export const EarnedHistoryCard: React.FC<EarnedHistoryCardProps> = ({ index, ite
 			className="flex cursor-pointer items-center px-0 py-5 border-b border-solid border-b-zinc-300 border-b-opacity-90 max-sm:flex-col max-sm:gap-4 max-sm:items-start"
 			aria-label="Earned history card"
 		>
-			<img
-				src={item.imageUrl}
+			<Image
+				src={Survey}
 				alt="Survey icon"
 				className="mr-8 rounded-xl h-[70px] w-[70px]"
 			/>

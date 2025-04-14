@@ -1,0 +1,18 @@
+<svg width="174" height="117" viewBox="0 0 174 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="174" height="116.315" rx="10" fill="white"/>
+<rect x="15.1819" y="13.8726" width="143.638" height="33.0805" rx="5" fill="#F6F6F8"/>
+<rect x="91.9629" y="57.624" width="66.5638" height="44.8188" rx="5" fill="#F6F6F8"/>
+<rect x="14.8887" y="57.624" width="66.5638" height="44.8188" rx="5" fill="#F6F6F8"/>
+<rect x="124.955" y="23.4766" width="26.8591" height="12.8054" rx="6.40268" fill="url(#paint0_linear_137_1390)"/>
+<circle cx="145" cy="30" r="5" fill="white"/>
+<circle cx="28" cy="71" r="8" fill="#EAE5FC"/>
+<circle cx="105" cy="71" r="8" fill="#FFE0B7"/>
+<rect x="24.5234" y="25.6108" width="67.7315" height="8.53691" rx="4.26846" fill="#E0E1E4"/>
+<defs>
+<linearGradient id="paint0_linear_137_1390" x1="124.955" y1="32.0135" x2="151.633" y2="27.0396" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C093FF"/>
+<stop offset="0.515" stop-color="#FFA9EC"/>
+<stop offset="0.871688" stop-color="#FFC65B"/>
+</linearGradient>
+</defs>
+</svg>

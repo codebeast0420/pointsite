@@ -22,7 +22,7 @@ export const StepsSection: React.FC<{ title: string, steps: Array<Step> }> = ({ 
 								stepNumber={step.number}
 								title={step.title}
 								description={step.description}
-								image={step.image.src}
+								image={step.image}
 							/>
 						</div>
 					))}

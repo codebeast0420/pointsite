@@ -42,7 +42,6 @@ export const AllSurveysSection: React.FC = () => {
 				{[...Array(10)].map((_, index) => (
 					<SurveyCard
 						key={`all-surveys-${index}`}
-						imageUrl="https://cdn.builder.io/api/v1/image/assets/TEMP/cea9d28fc9309c94bd6ca3096902462181ae91a5"
 						title="Survey title will go here as you can see the ma..."
 						points={1000}
 						isNew={index < 4}

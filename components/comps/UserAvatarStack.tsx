@@ -1,7 +1,7 @@
 import React from "react";
-import Avatar1 from "@/assets/images/Ellipse 106.png"
-import Avatar2 from "@/assets/images/Ellipse 92.png"
-import Avatar3 from "@/assets/images/Ellipse 111.png"
+import Avatar1 from "@/assets/images/Ellipse 106.svg"
+import Avatar2 from "@/assets/images/Ellipse 92.svg"
+import Avatar3 from "@/assets/images/Ellipse 111.svg"
 import { StaticImageData } from "next/image";
 
 interface User {

@@ -2,8 +2,9 @@
 import React from "react";
 import { Badge } from "./Badge";
 import Button from "@/components/layout/Button";
-import SurveyThumbnail from "@/assets/images/survey_b.png";
-
+import SurveyThumbnail from "@/assets/images/survey.svg";
+import Image from "next/image";
+import { SurveyLink } from "@/constants/constants";
 export const SurveyDetails: React.FC = () => {
   return (
     <section className="self-center px-14 py-5 mt-5 w-full rounded-3xl bg-neutral-100 max-w-[1300px] max-md:px-5 max-md:max-w-full" aria-label="Survey details section">
@@ -11,8 +12,8 @@ export const SurveyDetails: React.FC = () => {
         <div className="flex gap-24 max-[1160px]:flex-col max-[1160px]:items-center" aria-label="Survey details content">
           <div className="max-[1100px]:ml-0 w-[214px]" aria-label="Survey details thumbnail">
             <div className="flex flex-col items-center max-sm:w-full max-[1100px]:mt-10" aria-label="Survey details thumbnail content">
-              <img
-                src={SurveyThumbnail.src}
+                <Image
+                src={SurveyThumbnail}
                 alt="Survey thumbnail"
                 className="w-[214px] h-[214px] min-w-[214px]"
                 aria-label="Survey details thumbnail"
@@ -59,6 +60,9 @@ export const SurveyDetails: React.FC = () => {
                 variant="primary"
                 className="self-stretch mt-14 text-2xl max-md:mt-10 max-md:max-w-full"
                 aria-label="Survey details get button"
+                onClick={() => {
+                  window.open(SurveyLink, "_blank");
+                }}
               >
                 GET
               </Button>

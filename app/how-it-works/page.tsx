@@ -7,12 +7,12 @@ import { StepsSection } from "./components/StepsSection";
 import { AboutPoints } from "./components/AboutPoints";
 import Footer from "@/components/layout/Footer";
 import CTASection from "@/components/main/CTASection";
-import PStack from "@/components/svg/PStack";
-import Man from "@/assets/images/man.png"
+import PStack from "@/assets/images/Pstack.svg";
+import Man from "@/assets/images/man.svg"
 import { howToUseSteps } from "@/constants/constants";
 import { RedemptionSteps } from "./components/RedemptionSteps";
 import { Layout } from "@/components/layout/Layout";
-import LogoB from "@/assets/images/logo1.png";
+import LogoB from "@/assets/images/logo.svg";
 
 const HowItWorks: React.FC = () => {
 	return (
@@ -22,7 +22,7 @@ const HowItWorks: React.FC = () => {
 				<div className="px-8 max-md:px-2" aria-label="How it works content">
 					<section className="flex flex-col justify-center mx-2 items-center px-16 py-12 mt-8 w-full bg-neutral-100 rounded-[40px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
 						<div className="flex max-w-full items-center justify-around w-full">
-							<PStack className="mt-20" />
+							<Image src={PStack} alt="Pstack" className="mt-20" />
 							<div className="flex items-center justify-center max-md:flex-col">
 								<Image
 									src={LogoB}

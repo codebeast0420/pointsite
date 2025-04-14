@@ -1,15 +1,15 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import Survey from "@/assets/images/survey.svg"
 
 interface SurveyCardProps {
-	imageUrl: string;
 	title: string;
 	points: number;
 	isNew?: boolean;
 }
 
 export const SurveyCard: React.FC<SurveyCardProps> = ({
-	imageUrl,
 	title,
 	points,
 	isNew,
@@ -25,8 +25,8 @@ export const SurveyCard: React.FC<SurveyCardProps> = ({
 						NEW
 					</div>
 				)}
-				<img
-					src={imageUrl}
+				<Image
+					src={Survey}
 					alt=""
 					className="mb-5 w-full rounded-3xl h-[175px] object-cover"
 				/>

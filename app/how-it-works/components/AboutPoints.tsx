@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { CategoryTitle } from "@/components/comps/CategoryTitle";
-import PointRate from "@/assets/images/point_rate.png";
+import PointRate from "@/assets/images/point_rate.svg";
 import Image from "next/image";
 
 export const AboutPoints: React.FC = () => {
