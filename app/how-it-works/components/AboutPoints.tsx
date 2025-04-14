@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const AboutPoints: React.FC = () => {
 	return (
-		<section className="mt-14 mb-60 max-w-full max-md:mt-10" aria-label="About points section">
+		<section className="mt-14 mb-14 max-w-full max-md:mt-10 flex-shrink-0" aria-label="About points section">
 			<CategoryTitle title="About points" />
 			<div className="flex ml-10 w-[826px] max-md:w-full max-md:ml-0 gap-5 max-md:mt-2 mt-15 max-md:flex-col" aria-label="About points content">
 				<div className="w-[33%] max-md:w-full">

@@ -10,7 +10,7 @@ export const SurveyDetails: React.FC = () => {
     <section className="self-center px-14 py-5 mt-5 w-full rounded-3xl bg-neutral-100 max-w-[1300px] max-md:px-5 max-md:max-w-full" aria-label="Survey details section">
       <div className="px-10 py-5 mt-5 rounded-3xl bg-neutral-100 max-sm:px-5 max-sm:py-8" aria-label="Survey details content">
         <div className="flex gap-24 max-[1160px]:flex-col max-[1160px]:items-center" aria-label="Survey details content">
-          <div className="max-[1100px]:ml-0 w-[214px]" aria-label="Survey details thumbnail">
+          <div className="max-[1100px]:ml-0 mt-4 w-[214px]" aria-label="Survey details thumbnail">
             <div className="flex flex-col items-center max-sm:w-full max-[1100px]:mt-10" aria-label="Survey details thumbnail content">
                 <Image
                 src={SurveyThumbnail}

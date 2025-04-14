@@ -41,8 +41,8 @@ const HowItWorks: React.FC = () => {
 					<StepsSection title="How to use Raku Earn" steps={howToUseSteps} />
 					<RedemptionSteps />
 					<AboutPoints />
-					<CTASection />
 				</div>
+				<CTASection className="mt-44"/>
 			</div>
 			<Footer />
 		</Layout>

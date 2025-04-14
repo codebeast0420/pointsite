@@ -29,8 +29,7 @@ export const AllSurveysSection: React.FC = () => {
 							className="px-4 py-2 relative rounded-lg border border-zinc-300 appearance-none bg-white cursor-pointer w-[140px]"
 						>
 							<option value="date_added">Date added</option>
-							<option value="reward">Reward</option>
-							<option value="amount">Amount</option>
+							<option value="reward">Reward amount</option>
 							<option value="estimated_time">Estimated time</option>
 							<option value="popularity">Popularity</option>
 						</select>

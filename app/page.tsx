@@ -23,7 +23,7 @@ const LandingPage: React.FC = () => {
           <RedemptionSection />
           <FeaturesSection />
           <FAQSection />
-          <CTASection />
+          <CTASection className="mt-14"/>
         </div>
         <Footer />
       </Layout>

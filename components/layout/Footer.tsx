@@ -36,9 +36,9 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
   ];
 
   return (
-    <footer className={`py-12 w-full flex flex-col items-center justify-between max-sm:px-5 max-sm:py-8 ${className} ${pathname === '/' || pathname === '/how-it-works' ? 'bg-white' : 'bg-[#F6F5F9]'}`} aria-label="Footer">
+    <footer className={`py-10 w-full flex flex-col items-center justify-between max-sm:px-5 max-sm:py-8 ${className} ${pathname === '/' || pathname === '/how-it-works' ? 'bg-white' : 'bg-[#F6F5F9]'}`} aria-label="Footer">
       <div className="px-14 w-full max-w-[1440px]" aria-label="Footer content">
-        <div className="flex max-[600px]:flex-col justify-between" aria-label="Footer content section">
+        <div className="flex px-8 max-[600px]:flex-col justify-between" aria-label="Footer content section">
           <div className="flex max-sm:items-start flex-col gap-5 items-start mb-8">
             <div className="flex flex-col gap-5 items-start mb-8">
               <img src={Logo.src} alt="Logo" className="h-[58px] w-[172px]" aria-label="Logo" />
@@ -56,7 +56,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
                 </a>
               </div>
             </div>
-            <div className="ml-6 flex gap-2 max-sm:mt-0 mt-12 items-center p-3 bg-white rounded-full" aria-label="Install extension section">
+            <div className={`ml-6 flex gap-2 max-sm:mt-0 mt-12 items-center p-3 rounded-full ${pathname === '/' || pathname === '/how-it-works' ? 'bg-[#F6F5F9]' : 'bg-white'}`} aria-label="Install extension section">
               <GoogleLogo aria-label="Google logo" />
               <p className="text-base font-bold">Install Extension</p>
             </div>
@@ -96,7 +96,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
           </div>
         </div>
 
-        <div className="flex ml-6 max-md:ml-0 justify-start max-sm:flex-col-reverse max-sm:gap-10 gap-40 pt-5 border-solid border-t-[0.5px] border-t-zinc-300">
+        <div className="flex px-8 ml-6 max-md:ml-0 justify-start max-sm:flex-col-reverse max-sm:gap-10 gap-40 pt-5 border-solid border-t-[0.5px] border-t-zinc-300">
           <p className="text-sm">Copyright © 2024 Raku Earn Inc.</p>
           <nav className="flex gap-8 max-sm:flex-col max-sm:gap-2 max-sm:mt-4" aria-label="Legal">
             {policies.map((policy, index) => (
