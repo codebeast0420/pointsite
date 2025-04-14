@@ -23,7 +23,7 @@ export const FormInput: React.FC<FormInputProps> = ({
       <label htmlFor={id} className="mb-2 text-lg text-black block">
         {label}
       </label>
-      <div className={`w-[393px] max-sm:w-full`}>
+      <div className={`w-[394px] max-sm:w-full`}>
         <input
           id={id}
           type={type}

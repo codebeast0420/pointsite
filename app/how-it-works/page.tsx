@@ -24,10 +24,10 @@ const HowItWorks: React.FC = () => {
 						<div className="flex max-w-full items-center justify-around w-full">
 							<PStack className="mt-20" />
 							<div className="flex items-center justify-center max-md:flex-col">
-								<img
-									src={LogoB.src}
+								<Image
+									src={LogoB}
 									alt="How it works illustration"
-									className="object-contain grow w-[400px] aspect-[2.96] max-md:max-w-full"
+									className="object-contain grow w-[400px] max-md:max-w-full"
 								/>
 								<div className="ml-5 max-md:ml-0 max-md:text-center max-md:w-full">
 									<h1 className="text-4xl font-bold text-black pt-0">

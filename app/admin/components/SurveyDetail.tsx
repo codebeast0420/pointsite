@@ -20,13 +20,8 @@ export const SurveyDetail: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-row-reverse max-[1200px]:flex-col max-[1200px]:items-center gap-10 py-32 max-md:py-10">
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/0bc17241ccc9bd3e6f4d999e6fabd4ba7302cd73"
-        className="flex-1 rounded-3xl w-[294px] h-[294px]  max-sm:h-auto"
-        alt="Survey illustration"
-      />
-      <form className="flex-1 px-12 max-md:px-5">
+    <div className="flex overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] flex-row w-[72%] max-md:w-full max-[1200px]:flex-col-reverse max-[1200px]:items-center gap-10 mt-30 max-md:mt-10">
+      <form className="flex-1 max-[1200px]:flex max-[1200px]:flex-col max-[1200px]:items-center ml-5 max-md:px-5 max-[1200px]:w-full w-[38%]">
         <FormInput
           id="survey-title"
           label="Title"
@@ -64,6 +59,13 @@ export const SurveyDetail: React.FC = () => {
           onGoBack={() => console.log("Go back clicked")}
         />
       </form>
+      <div className="w-[62%] ml-10 flex items-start justify-center">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/0bc17241ccc9bd3e6f4d999e6fabd4ba7302cd73"
+          className="rounded-3xl w-[294px]"
+          alt="Survey illustration"
+        />
+      </div>
     </div>
   );
 };

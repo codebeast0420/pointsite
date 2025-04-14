@@ -11,7 +11,7 @@ export const SurveyForm: React.FC = () => {
 	};
 
 	return (
-		<section className="ml-5 w-[72%] max-md:ml-0 max-md:w-full mt-30 max-md:mt-10">
+		<section className="ml-5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] w-[72%] max-md:ml-0 max-md:w-full mt-30 max-md:mt-10">
 			<div className="flex flex-col items-start self-stretch my-auto w-full max-md:mt-10">
 				<form
 					onSubmit={handleSubmit}
@@ -21,7 +21,12 @@ export const SurveyForm: React.FC = () => {
 						<div className="flex gap-5 max-md:flex-col">
 							<div className="w-[38%] max-md:w-full">
 								<div className="flex flex-col gap-5">
-									<PostInput label="Title" type="text" required aria-required="true" />
+									<PostInput
+										label="Title"
+										type="text"
+										required
+										aria-required="true"
+									/>
 									<PostInput
 										label="Survey Provider"
 										type="text"
@@ -35,29 +40,34 @@ export const SurveyForm: React.FC = () => {
 										aria-required="true"
 									/>
 								</div>
+								<div className="mt-14 max-md:mt-10 space-y-5 w-[393px] max-md:w-full max-w-full">
+									<PostInput
+										label="Points Amount"
+										type="number"
+										required
+										aria-required="true"
+									/>
+									<PostInput
+										label="Link"
+										type="url"
+										required
+										aria-required="true"
+									/>
+
+									<div className="mt-28 max-md:mt-10">
+										<PostButton type="submit" fullWidth className="px-16">
+											Post
+										</PostButton>
+									</div>
+								</div>
 							</div>
 
-							<div className="ml-5 mt-10 w-[62%] max-md:ml-0 max-md:w-full">
+							<div className="ml-10 mt-10 w-[62%] max-md:ml-0 max-md:w-full">
 								<FileUpload />
 							</div>
 						</div>
 					</div>
 
-					<div className="mt-14 max-md:mt-10 space-y-5 w-[393px] max-w-full">
-						<PostInput
-							label="Points Amount"
-							type="number"
-							required
-							aria-required="true"
-						/>
-						<PostInput label="Link" type="url" required aria-required="true" />
-
-						<div className="mt-28 max-md:mt-10">
-							<PostButton type="submit" fullWidth className="px-16">
-								Post
-							</PostButton>
-						</div>
-					</div>
 				</form>
 			</div>
 		</section>

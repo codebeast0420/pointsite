@@ -22,7 +22,7 @@ export function UserTable() {
   ];
 
   return (
-    <div className="ml-5 w-[72%] max-md:ml-0 max-md:w-full mt-30 overflow-x-scroll">
+    <div className="ml-5 w-[72%] overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] max-md:ml-0 max-md:w-full mt-30 overflow-x-scroll">
       <table className="w-full border-collapse">
         <thead>
           <tr className="border-b border-black">
