@@ -3,7 +3,7 @@ import Step2Img from "@/assets/images/Group 1000004588.svg";
 import Step3Img from "@/assets/images/Group 1000004587.svg";
 import Step4Img from "@/assets/images/Group 1000004592.svg";
 import Step5Img from "@/assets/images/Group 1000004593.svg";
-import Step6Img from "@/assets/images/Group 1000004596.svg";
+import Step6Img from "@/assets/images/Group 1000004611.svg";
 import Redemption1 from "@/assets/images/redemption1.svg";
 import Redemption2 from "@/assets/images/redemption2.svg";
 import Redemption3 from "@/assets/images/redemption3.svg";
