@@ -36,12 +36,12 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
   ];
 
   return (
-    <footer className={`py-12 w-full flex flex-col items-center justify-between max-sm:px-5 max-sm:py-8 ${className} ${pathname === '/' || pathname === '/how-it-works' ? 'bg-white' : 'bg-[#F6F5F9]'}`}>
-      <div className="px-14 w-full max-w-[1440px]">
-        <div className="flex max-[600px]:flex-col justify-between">
-          <div className="flex max-sm:flex-row max-sm:items-center flex-col gap-5 items-start mb-8">
+    <footer className={`py-12 w-full flex flex-col items-center justify-between max-sm:px-5 max-sm:py-8 ${className} ${pathname === '/' || pathname === '/how-it-works' ? 'bg-white' : 'bg-[#F6F5F9]'}`} aria-label="Footer">
+      <div className="px-14 w-full max-w-[1440px]" aria-label="Footer content">
+        <div className="flex max-[600px]:flex-col justify-between" aria-label="Footer content section">
+          <div className="flex max-sm:items-start flex-col gap-5 items-start mb-8">
             <div className="flex flex-col gap-5 items-start mb-8">
-              <img src={Logo.src} alt="Logo" className="h-[58px] w-[172px]" />
+              <img src={Logo.src} alt="Logo" className="h-[58px] w-[172px]" aria-label="Logo" />
               <div className="flex gap-3 ml-6">
                 <a href="#twitter" aria-label="Twitter">
                   <div
@@ -52,18 +52,18 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
                   />
                 </a>
                 <a href="#instagram" aria-label="Instagram">
-                  <InstagramLogo />
+                  <InstagramLogo aria-label="Instagram logo" />
                 </a>
               </div>
             </div>
-            <div className="ml-6 flex gap-2 max-sm:mt-0 mt-12 items-center p-3 bg-white rounded-full">
-              <GoogleLogo />
+            <div className="ml-6 flex gap-2 max-sm:mt-0 mt-12 items-center p-3 bg-white rounded-full" aria-label="Install extension section">
+              <GoogleLogo aria-label="Google logo" />
               <p className="text-base font-bold">Install Extension</p>
             </div>
           </div>
 
-          <div className="flex justify-between w-1/3 max-[1100px]:w-2/3 mb-8 max-sm:gap-8">
-            <div className="flex gap-4 items-start cursor-pointer">
+          <div className="flex max-md:flex-col max-md:items-center max-sm:items-start justify-between w-1/3 max-[1100px]:w-2/3 mb-8 max-sm:gap-8">
+            <div className="flex gap-4 items-start cursor-pointer" aria-label="Language selection section">
               <h3 className="mb-2.5 text-base font-bold">English</h3>
               <button aria-label="Select language" className="flex items-center">
                 <div

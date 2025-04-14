@@ -18,16 +18,18 @@ const UserAvatarStack: React.FC = () => {
   ];
 
   return (
-    <div className="flex">
+    <div className="flex" aria-label="User avatar stack">
       {users.map((user, index) => (
         <div
           key={index}
           className="overflow-hidden -mr-2.5 rounded-full h-[43px] w-[43px]"
+          aria-label={`User avatar ${index + 1}`}
         >
           <img
             src={user.image.src}
             alt={user.alt}
             className="object-cover size-full"
+            aria-label={`User avatar ${index + 1}`}
           />
         </div>
       ))}

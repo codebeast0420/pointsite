@@ -30,31 +30,31 @@ const HeroSection: React.FC = () => {
 	];
 
 	return (
-		<section className="flex flex-row items-center justify-around max-[1100px]:p-8 max-[1100px]:gap-8 max-[1100px]:flex-col max-md:p-5 mt-[30px]">
-			<div className="ml-[7%]">
-				<h1 className="mb-8 text-5xl font-bold max-sm:text-4xl">
+		<section className="flex flex-row items-center justify-around max-[1100px]:p-8 max-[1100px]:gap-8 max-[1100px]:flex-col max-md:p-5 mt-[30px]" aria-label="Hero section">
+			<div className="ml-[7%]" aria-label="Hero content">
+				<h1 className="mb-8 text-5xl font-bold max-sm:text-4xl" aria-label="Hero title">
 					<span>Let AI take surveys</span>
 					<br />
 					<span className="bg-gradient-to-r from-[#c093ff] via-[#ffa9ec] to-[#FDB073] bg-clip-text text-transparent">
 						& earn money
 					</span>
 				</h1>
-				<p className="mb-5 text-lg font-semibold">
+				<p className="mb-5 text-lg font-semibold" aria-label="Hero description">
 					Surveys, filled out for you. Points, earned in real-time.
 				</p>
-				<div className="flex gap-4 items-center mb-16">
+				<div className="flex gap-4 items-center mb-16" aria-label="Hero users">
 					<UserAvatarStack />
-					<p className="text-lg font-semibold text-[#A7A7C7]">
+					<p className="text-lg font-semibold text-[#A7A7C7]" aria-label="Hero users description">
 						1000+ active users
 					</p>
 				</div>
-				<div className="flex gap-4 mt-8">
-					<Button variant="primary">Start Earning</Button>
-					<Button variant="secondary">Get AI</Button>
+				<div className="flex gap-4 mt-8" aria-label="Hero buttons">
+					<Button variant="primary" ariaLabel="Start Earning">Start Earning</Button>
+					<Button variant="secondary" ariaLabel="Get AI">Get AI</Button>
 				</div>
 			</div>
-			<div className="relative mt-[-50px] flex max-sm:mt-4">
-				<Image src={LandHero} alt="Land Hero" width={737} height={538} />
+			<div className="relative mt-[-50px] flex max-sm:mt-4" aria-label="Hero image">
+				<Image src={LandHero} alt="Land Hero" width={737} height={538} aria-label="Hero image" />
 			</div>
 		</section>
 	);

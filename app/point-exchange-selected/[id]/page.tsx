@@ -16,9 +16,9 @@ const GiftCardExchange: React.FC = () => {
 	const { id } = useParams();
 	return (
 		<Layout>
-			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
+			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]" aria-label="Point exchange selected page">
 				<Header />
-				<main className="pl-20 max-md:pl-5 pr-10 max-md:pr-5">
+				<main className="pl-20 max-md:pl-5 pr-10 max-md:pr-5" aria-label="Point exchange selected main">
 					<BackButton className="max-md:ml-5"/>
 					<GiftCardSelector id={id as PaymentMethodId} />
 					<div className="py-0 max-md:px-5 max-md:py-0">

@@ -5,8 +5,8 @@ import { ExchangeDetails as ExchangeDetailsData } from "@/constants/constants";
 
 export const ExchangeDetails: React.FC = () => {
 	return (
-		<section className="mt-16">
-			<h2 className="flex gap-2 items-center mb-8 text-2xl font-bold text-violet-500">
+		<section className="mt-16" aria-label="Exchange details section">
+			<h2 className="flex gap-2 items-center mb-8 text-2xl font-bold text-violet-500" aria-label="Exchange details title">
 				<Info color="#8771EF" />
 				Exchange details
 			</h2>

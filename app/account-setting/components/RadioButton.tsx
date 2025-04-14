@@ -12,9 +12,10 @@ export const RadioButton: React.FC<RadioButtonProps> = ({
 	onChange,
 }) => {
 	return (
-		<label className="flex gap-2.5 items-center cursor-pointer">
+		<label className="flex gap-2.5 items-center cursor-pointer" aria-label={label}>
 			<div
 				className={`flex flex-col justify-center p-1 items-center rounded-full border border-solid border-zinc-300 w-5 h-5`}
+				aria-label={label}
 			>
 				{checked && (
 					<div className="flex shrink-0 w-3.5 h-3.5 rounded-full bg-neutral-400" />

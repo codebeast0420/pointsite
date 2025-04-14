@@ -20,8 +20,8 @@ export const SurveyDetail: React.FC = () => {
   };
 
   return (
-    <div className="flex overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] flex-row w-[72%] max-md:w-full max-[1200px]:flex-col-reverse max-[1200px]:items-center gap-10 mt-30 max-md:mt-10">
-      <form className="flex-1 max-[1200px]:flex max-[1200px]:flex-col max-[1200px]:items-center ml-5 max-md:px-5 max-[1200px]:w-full w-[38%]">
+    <div className="flex overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] flex-row w-[72%] max-md:w-full max-[1200px]:flex-col-reverse max-[1200px]:items-center gap-10 mt-30 max-md:mt-10" aria-label="Survey detail section">
+      <form className="flex-1 max-[1200px]:flex max-[1200px]:flex-col max-[1200px]:items-center ml-5 max-md:px-5 max-[1200px]:w-full w-[38%]" aria-label="Survey detail form">
         <FormInput
           id="survey-title"
           label="Title"
@@ -59,7 +59,7 @@ export const SurveyDetail: React.FC = () => {
           onGoBack={() => console.log("Go back clicked")}
         />
       </form>
-      <div className="w-[62%] ml-10 flex items-start justify-center">
+      <div className="w-[62%] ml-10 flex items-start justify-center" aria-label="Survey detail image section">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/0bc17241ccc9bd3e6f4d999e6fabd4ba7302cd73"
           className="rounded-3xl w-[294px]"

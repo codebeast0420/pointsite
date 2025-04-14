@@ -13,7 +13,7 @@ function PointExchange() {
 
 	return (
 		<Layout>
-			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
+			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]" aria-label="Point exchange page">
 				<Header />
 				<HeroSection />
 				<PaymentSection

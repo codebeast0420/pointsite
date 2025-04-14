@@ -6,20 +6,22 @@ import SurveyThumbnail from "@/assets/images/survey_b.png";
 
 export const SurveyDetails: React.FC = () => {
   return (
-    <section className="self-center px-14 py-5 mt-5 w-full rounded-3xl bg-neutral-100 max-w-[1300px] max-md:px-5 max-md:max-w-full">
-      <div className="px-10 py-5 mt-5 rounded-3xl bg-neutral-100 max-sm:px-5 max-sm:py-8">
-        <div className="flex gap-24 max-[1160px]:flex-col max-[1160px]:items-center">
-          <div className="max-[1100px]:ml-0 w-[214px]">
-            <div className="flex flex-col items-center max-sm:w-full max-[1100px]:mt-10">
+    <section className="self-center px-14 py-5 mt-5 w-full rounded-3xl bg-neutral-100 max-w-[1300px] max-md:px-5 max-md:max-w-full" aria-label="Survey details section">
+      <div className="px-10 py-5 mt-5 rounded-3xl bg-neutral-100 max-sm:px-5 max-sm:py-8" aria-label="Survey details content">
+        <div className="flex gap-24 max-[1160px]:flex-col max-[1160px]:items-center" aria-label="Survey details content">
+          <div className="max-[1100px]:ml-0 w-[214px]" aria-label="Survey details thumbnail">
+            <div className="flex flex-col items-center max-sm:w-full max-[1100px]:mt-10" aria-label="Survey details thumbnail content">
               <img
                 src={SurveyThumbnail.src}
                 alt="Survey thumbnail"
                 className="w-[214px] h-[214px] min-w-[214px]"
+                aria-label="Survey details thumbnail"
               />
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/87b5d4114987481390e084a568fbb563/18e84256b257bc680e97329a567bafcf12bba368?placeholderIfAbsent=true"
                 alt="Provider logo"
                 className="object-contain self-center mt-7 rounded-full aspect-square w-[54px]"
+                aria-label="Survey details provider logo"
               />
             </div>
           </div>
@@ -56,6 +58,7 @@ export const SurveyDetails: React.FC = () => {
               <Button
                 variant="primary"
                 className="self-stretch mt-14 text-2xl max-md:mt-10 max-md:max-w-full"
+                aria-label="Survey details get button"
               >
                 GET
               </Button>

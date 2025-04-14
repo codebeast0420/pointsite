@@ -19,8 +19,11 @@ export const Sidebar: React.FC<{ navItems: string[], activeItem: string, setActi
 				<Menu size={24} />
 			</button>
 
-			<aside className={`w-[28%] max-md:fixed max-md:inset-y-0 max-md:left-0 max-md:w-full max-md:transform max-md:transition-transform max-md:duration-300 ${isOpen ? 'max-md:translate-x-0' : 'max-md:-translate-x-full'
-				}`}>
+			<aside
+				className={`w-[28%] max-md:fixed max-md:inset-y-0 max-md:left-0 max-md:w-full max-md:transform max-md:transition-transform max-md:duration-300 ${isOpen ? 'max-md:translate-x-0' : 'max-md:-translate-x-full'
+					}`}
+				aria-label="Admin Sidebar"
+			>
 
 				<div className="flex min-h-[100vh] justify-between flex-col grow items-center pt-8 pb-16 w-full font-semibold text-black bg-white max-md:mt-10">
 					<div className="flex flex-col items-center w-full">
@@ -43,6 +46,7 @@ export const Sidebar: React.FC<{ navItems: string[], activeItem: string, setActi
 										: ""
 										} ${index === 0 ? "mt-0" : ""}`}
 									aria-current={item === activeItem ? "page" : undefined}
+									aria-label={item}
 									onClick={() => {
 										setActiveItem(item);
 										setIsSurveyDetailOpen(false);
@@ -60,6 +64,7 @@ export const Sidebar: React.FC<{ navItems: string[], activeItem: string, setActi
 								localStorage.removeItem("isLoggedIn");
 								router.push("/");
 							}}
+							aria-label="Log out"
 						>
 							Log out
 						</button>
@@ -69,6 +74,7 @@ export const Sidebar: React.FC<{ navItems: string[], activeItem: string, setActi
 			{isOpen && (
 				<div
 					className="fixed inset-0 bg-white bg-opacity-50 z-40 md:hidden"
+					aria-label="Overlay"
 				>
 					<button
 						className="md:hidden fixed top-4 left-4 p-2 rounded-lg bg-white shadow-md"
@@ -77,7 +83,10 @@ export const Sidebar: React.FC<{ navItems: string[], activeItem: string, setActi
 					>
 						<X size={24} />
 					</button>
-					<div className="flex flex-col items-start self-stretch px-2.5 mt-20 text-lg">
+					<div
+						className="flex flex-col items-start self-stretch px-2.5 mt-20 text-lg"
+						aria-label="Admin Mobile Sidebar"
+					>
 						{navItems.map((item, index) => (
 							<button
 								key={item}
@@ -89,6 +98,7 @@ export const Sidebar: React.FC<{ navItems: string[], activeItem: string, setActi
 									? " bg-neutral-100 "
 									: ""
 									} ${index === 0 ? "mt-0" : ""}`}
+								aria-label={item}
 							>
 								{item}
 							</button>
@@ -96,7 +106,9 @@ export const Sidebar: React.FC<{ navItems: string[], activeItem: string, setActi
 						<button className="px-6 py-4 mt-auto text-lg cursor-pointer" onClick={() => {
 							localStorage.removeItem("isLoggedIn");
 							router.push("/");
-						}}>
+						}}
+							aria-label="Log out"
+						>
 							Log out
 						</button>
 					</div>

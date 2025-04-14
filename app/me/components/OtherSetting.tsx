@@ -5,7 +5,7 @@ import Link from "next/link";
 export const OtherSettings: React.FC = () => {
   return (
     <section className="mb-10" aria-labelledby="other-settings">
-      <h2 id="other-settings" className="mb-5 text-2xl font-bold text-black">
+      <h2 id="other-settings" className="mb-5 text-2xl font-bold text-black" aria-label="Other settings title">
         Others
       </h2>
       <nav>

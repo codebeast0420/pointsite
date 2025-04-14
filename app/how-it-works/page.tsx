@@ -17,9 +17,9 @@ import LogoB from "@/assets/images/logo1.png";
 const HowItWorks: React.FC = () => {
 	return (
 		<Layout>
-			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
+			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]" aria-label="How it works page">
 				<Header />
-				<div className="px-8 max-md:px-2">
+				<div className="px-8 max-md:px-2" aria-label="How it works content">
 					<section className="flex flex-col justify-center mx-2 items-center px-16 py-12 mt-8 w-full bg-neutral-100 rounded-[40px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
 						<div className="flex max-w-full items-center justify-around w-full">
 							<PStack className="mt-20" />

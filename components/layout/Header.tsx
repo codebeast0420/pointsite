@@ -28,26 +28,26 @@ const Header: React.FC = () => {
 	const router = useRouter();
 
 	return (
-		<header className="flex items-center justify-between py-8">
+		<header className="flex items-center justify-between py-8" aria-label="Header">
 			<div className="flex items-center gap-10">
 				<Link href="/" className="text-2xl font-bold">
-					<Image src={Logo} alt="Logo" className="w-[172px]" />
+					<Image src={Logo} alt="Logo" className="w-[172px]" aria-label="Logo" />
 				</Link>
 			</div>
 			<div className="flex items-center gap-10">
 				<nav className="flex gap-10 max-[906px]:hidden" aria-label="Main navigation">
-					<Link href="/how-it-works" className="text-base font-bold text-black">
+					<Link href="/how-it-works" className="text-base font-bold text-black" aria-label="How it Works">
 						How it Works
 					</Link>
-					<Link href="/survey-list" className="text-base font-bold text-black">
+					<Link href="/survey-list" className="text-base font-bold text-black" aria-label="Survey List">
 						Survey List
 					</Link>
-					<Link href="/point-exchange" className="text-base font-bold text-black">
+					<Link href="/point-exchange" className="text-base font-bold text-black" aria-label="Point Exchange">
 						Point Exchange
 					</Link>
 				</nav>
 				<div className="flex gap-2.5 max-[906px]:hidden">
-					<Button variant="secondary">AI Dashboard</Button>
+					<Button variant="secondary" aria-label="AI Dashboard">AI Dashboard</Button>
 					{isLogedin ? (
 						<div className="relative" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
 							<div className="flex cursor-pointer items-center justify-center p-3 rounded-full bg-neutral-100 hover:bg-neutral-200 gap-2">
@@ -91,7 +91,7 @@ const Header: React.FC = () => {
 							)}
 						</div>
 					) : (
-						<Button variant="primary" onClick={() => router.push("/login")}>Login</Button>
+						<Button variant="primary" onClick={() => router.push("/login")} aria-label="Login">Login</Button>
 					)}
 				</div>
 			</div>
@@ -109,7 +109,7 @@ const Header: React.FC = () => {
 			</button>
 
 			{/* Mobile Menu */}
-			<div className={`fixed top-0 left-0 w-full h-full bg-white z-50 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} max-[906px]:block hidden`}>
+			<div className={`fixed top-0 left-0 w-full h-full bg-white z-50 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} max-[906px]:block hidden`} aria-label="Mobile menu">
 				<div className="p-4">
 					<Link href="/" className="flex justify-between items-center mb-8">
 						<img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b4a2606fc0d129ed5f9dc4774ede3ece5dba4f4" alt="Logo" className="h-[58px] w-[172px]" />
@@ -124,15 +124,15 @@ const Header: React.FC = () => {
 						))}
 					</nav>
 					<div className="flex flex-col gap-4 mt-8">
-						<Button variant="secondary" className="w-full">AI Dashboard</Button>
+						<Button variant="secondary" className="w-full" aria-label="AI Dashboard">AI Dashboard</Button>
 						{isLogedin ? (
 							<Button variant="primary" className="w-full" onClick={() => {
 								localStorage.removeItem("isLoggedIn");
 								setIsLogedin(false);
 								router.push("/");
-							}}>Log Out</Button>
+							}} aria-label="Log Out">Log Out</Button>
 						) : (
-							<Button variant="primary" className="w-full" onClick={() => router.push("/login")}>Login</Button>
+							<Button variant="primary" className="w-full" onClick={() => router.push("/login")} aria-label="Login">Login</Button>
 						)}
 					</div>
 				</div>

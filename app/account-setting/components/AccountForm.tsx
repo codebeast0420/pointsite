@@ -26,13 +26,13 @@ export const AccountForm = () => {
   )
 
   return (
-    <section className="flex flex-col items-start w-full">
-      <h1 className="mt-10 text-2xl font-bold text-black max-md:mt-10 max-md:ml-2.5">
+    <section className="flex flex-col items-start w-full" aria-label="Account setting section">
+      <h1 className="mt-10 text-2xl font-bold text-black max-md:mt-10 max-md:ml-2.5" aria-label="Account setting title">
         Account setting
       </h1>
 
-      <div className="flex flex-col w-full">
-        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+      <div className="flex flex-col w-full" aria-label="Account setting form">
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Nickname input">
           <label htmlFor="nickname" className="my-auto w-[18%]">Nickname</label>
           <input
             id="nickname"
@@ -43,7 +43,7 @@ export const AccountForm = () => {
           />
         </div>
 
-        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Email input">
           <label htmlFor="email" className="my-auto w-[18%]">Email address</label>
           <input
             id="email"
@@ -54,7 +54,7 @@ export const AccountForm = () => {
           />
         </div>
 
-        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Password input">
           <label htmlFor="password" className="my-auto w-[18%]">Password</label>
           <div className="flex gap-5">
             <input
@@ -70,7 +70,7 @@ export const AccountForm = () => {
           </div>
         </div>
 
-        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Date of birth input">
           <label htmlFor="dob" className="my-auto w-[18%] text-base font-medium text-black">
             Date of birth
           </label>
@@ -82,7 +82,7 @@ export const AccountForm = () => {
           </div>
         </div>
 
-        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Gender input">
           <label htmlFor="gender" className="my-auto w-[18%] text-base font-medium text-black">Gender</label>
           <div className="flex gap-8">
             <RadioButton
@@ -106,7 +106,7 @@ export const AccountForm = () => {
           </div>
         </div>
 
-        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+        <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Prefectures input">
           <label htmlFor="prefectures" className="my-auto w-[18%]">Prefectures</label>
           <div className="relative">
             <select

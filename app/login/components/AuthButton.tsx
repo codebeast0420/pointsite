@@ -6,6 +6,7 @@ interface AuthButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> 
 	variant?: "primary" | "secondary";
 	fullWidth?: boolean;
 	children: React.ReactNode;
+	ariaLabel?: string;
 }
 
 export const AuthButton: React.FC<AuthButtonProps> = ({
@@ -13,6 +14,7 @@ export const AuthButton: React.FC<AuthButtonProps> = ({
 	fullWidth = false,
 	children,
 	className = "",
+	ariaLabel,
 	...props
 }) => {
 	const baseStyles =
@@ -27,6 +29,7 @@ export const AuthButton: React.FC<AuthButtonProps> = ({
 		<button
 			className={`${baseStyles} ${variantStyles} ${widthStyles} ${className}`}
 			{...props}
+			aria-label={ariaLabel}
 		>
 			{children}
 		</button>

@@ -22,6 +22,7 @@ export const PostInput: React.FC<PostInputProps> = ({
         id={inputId}
         className={`h-10 bg-white rounded-md border border-solid border-zinc-300 border-opacity-90 ${className}`}
         {...props}
+        aria-label={label}
       />
     </div>
   );

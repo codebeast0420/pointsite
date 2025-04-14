@@ -5,8 +5,8 @@ import { TableRow } from "./TableRow";
 
 export const ExchangeProcedure: React.FC = () => {
   return (
-    <section className="mt-16 mb-30">
-      <h2 className="flex gap-2 items-center mb-8 text-2xl font-bold text-violet-500">
+    <section className="mt-16 mb-30" aria-label="Exchange procedure section">
+      <h2 className="flex gap-2 items-center mb-8 text-2xl font-bold text-violet-500" aria-label="Exchange procedure title">
         <CircleHelp color="#8771EF" />
         Exchange procedure
       </h2>

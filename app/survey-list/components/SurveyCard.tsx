@@ -16,7 +16,7 @@ export const SurveyCard: React.FC<SurveyCardProps> = ({
 }) => {
 	return (
 		<Link href={`/selected-survey`}>
-			<article className="relative p-5 cursor-pointer rounded-3xl bg-neutral-100">
+			<article className="relative p-5 cursor-pointer rounded-3xl bg-neutral-100" aria-label="Survey card">
 				{isNew && (
 					<div
 						className="absolute -top-2 left-[40%] px-2 py-0.5 text-xs font-bold text-white bg-red-600 rounded-md"

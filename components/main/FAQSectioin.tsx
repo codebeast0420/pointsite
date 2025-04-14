@@ -10,10 +10,10 @@ const FAQSection: React.FC = () => {
   }, [openIndex]);
 
   return (
-    <section className="px-46 py-12 text-center max-[1000px]:p-8">
-      <h2 className="mb-10 text-4xl font-bold">Frequently asked questions</h2>
-      <div className="flex gap-10 max-md:flex-col max-md:gap-5 max-md:w-full">
-        <div className="flex flex-col gap-5 w-1/2 max-md:w-full">
+    <section className="px-46 py-12 text-center max-[1000px]:p-8" aria-label="FAQ section">
+      <h2 className="mb-10 text-4xl font-bold" aria-label="FAQ title">Frequently asked questions</h2>
+      <div className="flex gap-10 max-md:flex-col max-md:gap-5 max-md:w-full" aria-label="FAQ content">
+        <div className="flex flex-col gap-5 w-1/2 max-md:w-full" aria-label="FAQ content left">
           {FAQs.filter((faq, index) => index % 2 === 0).map((faq, index) => (
             <div key={faq.order} className={`overflow-hidden py-0 rounded-3xl bg-neutral-100 ${openIndex !== faq.order ? "h-[75px]" : ""}`}>
               <button
@@ -32,12 +32,12 @@ const FAQSection: React.FC = () => {
                   : "max-h-0 opacity-0"
                   }`}
               >
-                <p className="text-base text-left text-gray-600">{faq.description}</p>
+                <p className="text-base text-left text-gray-600" aria-label="FAQ description">{faq.description}</p>
               </div>
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-5 w-1/2 max-md:w-full">
+        <div className="flex flex-col gap-5 w-1/2 max-md:w-full" aria-label="FAQ content right">
           {FAQs.filter((faq, index) => index % 2 !== 0).map((faq, index) => (
             <div key={index} className={`overflow-hidden py-0 rounded-3xl bg-neutral-100 ${openIndex !== faq.order ? "h-[75px]" : ""}`}>
               <button

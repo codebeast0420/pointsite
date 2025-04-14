@@ -22,13 +22,13 @@ export const LoginForm: React.FC = () => {
 	};
 
 	return (
-		<div className="flex-1 bg-white px-10 py-6 rounded-3xl max-sm:p-5">
+		<div className="flex-1 bg-white px-10 py-6 rounded-3xl max-sm:p-5" aria-label="Login form">
 			<form onSubmit={handleSubmit}>
-				<h2 className="mb-2 text-2xl font-semibold">Login</h2>
+				<h2 className="mb-2 text-2xl font-semibold" aria-label="Login title">Login</h2>
 				<div className="mb-8 h-px bg-zinc-300 bg-opacity-90" />
-				<div className="flex flex-col items-center w-full">
-					<div className="self-center w-[90%]">
-						<div className="mb-6">
+				<div className="flex flex-col items-center w-full" aria-label="Login form content">
+					<div className="self-center w-[90%]" aria-label="Login form content">
+						<div className="mb-6" aria-label="Email input">
 							<label
 								htmlFor="email"
 								className="mb-2.5 text-base font-medium block"
@@ -44,7 +44,7 @@ export const LoginForm: React.FC = () => {
 								required
 							/>
 						</div>
-						<div className="mb-6">
+						<div className="mb-6" aria-label="Password input">
 							<label
 								htmlFor="password"
 								className="mb-2.5 text-base font-medium block"
@@ -63,10 +63,11 @@ export const LoginForm: React.FC = () => {
 						<button
 							type="button"
 							className="mb-6 text-base font-medium cursor-pointer text-neutral-400"
+							aria-label="Forgot password"
 						>
 							Forgot password?
 						</button>
-						<AuthButton type="submit" fullWidth>
+						<AuthButton type="submit" fullWidth ariaLabel="Login button">
 							Login
 						</AuthButton>
 					</div>

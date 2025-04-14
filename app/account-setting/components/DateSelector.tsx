@@ -20,8 +20,8 @@ export const DateSelector = ({ value, onChange }: { value: Date, onChange: (date
 	};
 
 	return (
-		<div className="flex gap-2">
-			<div className="relative">
+		<div className="flex gap-2" aria-label="Date selector">
+			<div className="relative" aria-label="Year selector">
 				<select
 					value={date.getFullYear()}
 					onChange={(e) => handleChange('year', parseInt(e.target.value))}
@@ -33,7 +33,7 @@ export const DateSelector = ({ value, onChange }: { value: Date, onChange: (date
 				</select>
 				<ChevronDown className="absolute pointer-events-none right-2 top-1/2 -translate-y-1/2" />
 			</div>
-			<div className="relative">
+			<div className="relative" aria-label="Month selector">
 				<select
 					value={date.getMonth() + 1}
 					onChange={(e) => handleChange('month', parseInt(e.target.value))}
@@ -45,7 +45,7 @@ export const DateSelector = ({ value, onChange }: { value: Date, onChange: (date
 				</select>
 				<ChevronDown className="absolute pointer-events-none right-2 top-1/2 -translate-y-1/2" />
 			</div>
-			<div className="relative">
+			<div className="relative" aria-label="Day selector">
 				<select
 					value={date.getDate()}
 					onChange={(e) => handleChange('day', parseInt(e.target.value))}

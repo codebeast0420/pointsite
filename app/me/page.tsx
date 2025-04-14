@@ -10,9 +10,9 @@ import { Layout } from "@/components/layout/Layout";
 export default function Page () {
 	return (
 		<Layout>
-			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
+			<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]" aria-label="Me page">
 				<Header />
-				<main className="pl-20 max-md:pl-5 pr-10 max-md:pr-5 py-10 max-md:px-5 max-md:py-10">
+				<main className="pl-20 max-md:pl-5 pr-10 max-md:pr-5 py-10 max-md:px-5 max-md:py-10" aria-label="Me main">
 					<AccountSummary />
 					<PointPassbook />
 					<OtherSettings />

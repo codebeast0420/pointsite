@@ -15,9 +15,9 @@ const LoginPage: React.FC = () => {
 				rel="stylesheet"
 			/>
 			<Layout>
-				<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]">
+				<div className="px-12 max-md:px-2 w-full max-w-[1440px] max-md:max-w-[991px]" aria-label="Login page">
 					<Header />
-					<section className="px-26 py-0 mb-20 max-md:px-5 max-md:py-0">
+					<section className="px-26 py-0 mb-20 max-md:px-5 max-md:py-0" aria-label="Login section">
 						<h1 className="mb-8 text-3xl font-bold max-sm:text-2xl">
 							Login / registration
 						</h1>

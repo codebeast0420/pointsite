@@ -14,10 +14,10 @@ export const StepsSection: React.FC<{ title: string, steps: Array<Step> }> = ({ 
 		<section className="mt-16 flex flex-col" aria-labelledby="steps-title">
 			<CategoryTitle title={title} />
 
-			<div className="self-center mt-7 w-full px-8 max-md:max-w-full">
-				<div className="grid max-[1100px]:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 grid-cols-4 gap-5 max-md:flex-col">
+			<div className="self-center mt-7 w-full px-8 max-md:max-w-full" aria-label="Steps section">
+				<div className="grid max-[1100px]:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 grid-cols-4 gap-5 max-md:flex-col" aria-label="Steps">
 					{steps.map((step, index) => (
-						<div className="w-full" key={index}>
+						<div className="w-full" key={index} aria-label="Step">
 							<StepCard
 								stepNumber={step.number}
 								title={step.title}

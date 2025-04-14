@@ -18,12 +18,12 @@ export function RegistrationForm() {
   });
 
   return (
-    <form>
-      <h2 className="mb-2 text-2xl font-semibold text-black">
+    <form aria-label="Registration form">
+      <h2 className="mb-2 text-2xl font-semibold text-black" aria-label="Registration form title">
         Basic information
       </h2>
 
-      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Registration form nickname">
         <RequiredLabel text="Nickname" />
         <input
           type="text"
@@ -36,7 +36,7 @@ export function RegistrationForm() {
         />
       </div>
 
-      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Registration form email address">
         <RequiredLabel text="Email address" />
         <input
           type="email"
@@ -49,7 +49,7 @@ export function RegistrationForm() {
         />
       </div>
 
-      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-start gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-start gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Registration form password">
         <RequiredLabel text="Password" />
         <div className="flex flex-col gap-2.5">
           <input
@@ -73,14 +73,14 @@ export function RegistrationForm() {
         </div>
       </div>
 
-      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Registration form date of birth">
         <RequiredLabel text="Date of birth" />
         <div className="flex gap-2.5 max-sm:flex-col">
           <DateSelector value={userProfile.dob} onChange={(date) => setUserProfile({ ...userProfile, dob: date })} />
         </div>
       </div>
 
-      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Registration form gender">
         <RequiredLabel text="Gender" />
         <div className="flex gap-12 max-sm:flex-col max-sm:gap-5">
           <RadioButton
@@ -104,7 +104,7 @@ export function RegistrationForm() {
         </div>
       </div>
 
-      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90">
+      <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-start items-center gap-30 mb-2 border-b border-solid p-8 border-zinc-300 border-opacity-90" aria-label="Registration form prefectures">
         <RequiredLabel text="Prefectures" />
         <div className="relative">
           <select className="px-4 py-2 relative rounded-lg border border-zinc-300 appearance-none bg-white cursor-pointer w-[150px]">
@@ -117,12 +117,12 @@ export function RegistrationForm() {
         </div>
       </div>
 
-      <section className="mt-16">
-        <div className="flex gap-5 items-center mb-7">
-          <h2 className="text-2xl font-semibold text-black">
+      <section className="mt-16" aria-label="Registration form agreements on terms of use">
+        <div className="flex gap-5 items-center mb-7" aria-label="Registration form agreements on terms of use title">
+          <h2 className="text-2xl font-semibold text-black" aria-label="Registration form agreements on terms of use title">
             Agreements on Terms of Use
           </h2>
-          <div className="px-2.5 py-0.5 text-xs font-bold text-white bg-red-600 rounded-md">
+          <div className="px-2.5 py-0.5 text-xs font-bold text-white bg-red-600 rounded-md" aria-label="Registration form agreements on terms of use required">
             Required
           </div>
         </div>
@@ -134,7 +134,7 @@ export function RegistrationForm() {
             Private Policy
           </a>
         </div>
-        <div className="flex gap-5 items-center mt-7">
+        <div className="flex gap-5 items-center mt-7" aria-label="Registration form agree to the terms of use and privacy policy">
           <input
             type="checkbox"
             id="agree"
@@ -149,6 +149,7 @@ export function RegistrationForm() {
       <button
         type="submit"
         className="mx-auto my-16 text-base font-bold text-white bg-violet-500 border-[none] h-[50px] rounded-[100px] w-[393px] max-sm:w-full"
+        aria-label="Registration form register button"
       >
         Register
       </button>

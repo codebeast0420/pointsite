@@ -7,10 +7,11 @@ interface SelectFieldProps {
 
 export function SelectField(props: SelectFieldProps) {
   return (
-    <div className="relative h-10 rounded-md border border-solid border-zinc-300 border-opacity-90 max-sm:w-full">
+    <div className="relative h-10 rounded-md border border-solid border-zinc-300 border-opacity-90 max-sm:w-full" aria-label="Select field">
       <select
         {...props}
         className="w-full h-full px-4 appearance-none bg-transparent"
+        aria-label="Select field"
       >
         <option value="" disabled defaultValue="" />
       </select>
