@@ -1,10 +1,11 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import Button from "./Button";
 import Link from "next/link";
 import { ChevronRight, UserRound } from "lucide-react";
 import { HeaderLinks } from "@/constants/constants";
 import { useRouter } from "next/navigation";
-import Logo from '@/assets/images/logo.png';
+import Logo from '@/assets/images/logo1.png';
 
 const MobileLink = ({ href, title, onClick }: { href: string, title: string, onClick: () => void }) => {
 	return (
@@ -29,7 +30,7 @@ const Header: React.FC = () => {
 		<header className="flex items-center justify-between py-8">
 			<div className="flex items-center gap-10">
 				<Link href="/" className="text-2xl font-bold">
-					<img src={Logo.src} alt="Logo" className="h-[58px] w-[172px]" />
+					<img src={Logo.src} alt="Logo" className="w-[172px] aspect-[2.96]" />
 				</Link>
 			</div>
 			<div className="flex items-center gap-10">

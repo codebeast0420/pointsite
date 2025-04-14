@@ -12,7 +12,7 @@ import Man from "@/assets/images/man.png"
 import { howToUseSteps } from "@/constants/constants";
 import { RedemptionSteps } from "./components/RedemptionSteps";
 import { Layout } from "@/components/layout/Layout";
-import LogoB from "@/assets/images/logo_b.png";
+import LogoB from "@/assets/images/logo1.png";
 
 const HowItWorks: React.FC = () => {
 	return (
